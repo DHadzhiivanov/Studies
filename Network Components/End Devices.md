@@ -4,4 +4,4 @@ The network devices that people are most familiar with are end devices. To disti
 
 An end device is either the ==**source**== or ==**destination**== of a message transmitted over the network.
 
-![[Pasted image 20260205213017.png]]
+![[EndDevices.png]]

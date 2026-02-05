@@ -2,7 +2,7 @@
 
 In small businesses and homes, many computers function as the server and the [client](Host%20Roles.md) on the network. This type of network is called a peer-to-peer network.
 
-In the figure, the print sharing PC has a **Universal Serial Bus (USB)** connected to the printer and a network connection, using a **Network Interface Card (NIC)**, to the file sharing PC.
+In the figure, the print sharing PC has a **Universal Serial Bus (USB)** connected to the printer and a network connection, using a [**Network Interface Card (NIC)**](Network%20Representation#^nic), to the file sharing PC.
 
 ![[Pasted image 20260205211956.png]]
 

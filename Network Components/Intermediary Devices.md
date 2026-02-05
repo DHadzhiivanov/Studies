@@ -6,7 +6,7 @@ Intermediary devices use the destination end device address, in conjunction with
 
 Examples of the more common intermediary devices and a list of functions are shown in the figure.
 
-![[Pasted image 20260205213343.png]]
+![[IntermediaryDevices.png]]
 
 Intermediary network devices perform some or all of these functions:
 
