@@ -26,3 +26,4 @@ This protocol ensures that all packets receive the end user, unlike the [[UDP Pr
 
 ## Related Topics
 	- [[]]
+![[Pasted image 20260205172810.png]]
