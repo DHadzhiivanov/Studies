@@ -12,7 +12,7 @@ A diagram provides an easy way to understand how devices connect in a large netw
 
 The ability to recognize the logical representations of the physical networking components is critical to being able to visualize the organization and operation of a network. 
 
-In addition to these representations, specialized terminology is used to describe how each of these [devices](End%20Devices) and [media](Network%20Media) connect to each other:
+In addition to these representations, specialized terminology is used to describe how each of these [devices](End%20Devices.md) and [media](Network%20Media.md) connect to each other:
 
 - Network Interface Card (NIC) - A NIC physically connects the end device to the network. ^NIC
 - Physical Port - A connector or outlet on a networking device where the media connects to an end device or another networking device.
@@ -28,12 +28,12 @@ They provide a visual map of how the network is connected.
 
 ### Physical Topology Diagrams
 
-They illustrate the physical location of [intermediary devices](Intermediary%20Devices) and cable installation.
+They illustrate the physical location of [intermediary devices](Intermediary%20Devices.md) and cable installation.
 
 ![[Pasted image 20260205224156.png]]
 
 ### Logical Topology Diagrams
 
-They illustrate devices, ports and the [addressing](IP%20Addressing) scheme of the network.
+They illustrate devices, ports and the [addressing](IP%20Addressing.md) scheme of the network.
 
 ![[Pasted image 20260205224315.png]]
