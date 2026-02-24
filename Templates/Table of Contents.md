@@ -1,16 +1,33 @@
-## Table of Contents
-<%*
-    let headers = await tp.file.content
-        .split('\n') // split file into lines
-        .filter(t => t.match(/^[#]+\s+/gi)) // only get headers
-        .map(h => {
-            let header_level = h.split(' ')[0].match(/#/g).length;
-             // get header text without special characters like '[' and ']'
-            let header_text = h.substring(h.indexOf(' ') + 1).replace(/[\[\]]+/g, '');
-            let header_link = `[[${tp.file.title}#${header_text}|${header_text}]]`
 
-            // add indentation and bullet-point
-            return `${'    '.repeat(header_level - 1) + '- ' + header_link}`;
-        })
-        .join('\n')
-%><% headers %>
+<%*
+const file = app.workspace.getActiveFile();
+const content = await app.vault.read(file);
+const lines = content.split('\n');
+
+const headingRegex = /^(#{1,6})\s+(.+)$/;
+const headings = [];
+
+for (const line of lines) {
+  const match = line.match(headingRegex);
+  if (match) {
+    const level = match[1].length;
+    const text = match[2].trim();
+    if (text === "Table of Contents") continue;
+    headings.push({ level, text });
+  }
+}
+
+if (headings.length === 0) {
+  tR += "_No headings found._";
+} else {
+  const minLevel = Math.min(...headings.map(h => h.level));
+  const tocLines = [];
+
+  for (const heading of headings) {
+    const indent = "    ".repeat(heading.level - minLevel);
+    tocLines.push(`${indent}1. ${heading.text}`);
+  }
+
+  tR += tocLines.join('\n');
+}
+%>
