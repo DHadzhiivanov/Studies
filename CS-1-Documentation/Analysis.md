@@ -2,7 +2,55 @@
 **Name:** David Hadzhiivanov
 **Student Number:**  570330
 
+---
+
 # Table of Contents
+
+1. Introduction
+2. Main Problem
+3. Stakeholder Identification and Analysis
+    1. Library Staff
+        1. Role and Perspective
+        2. Current Problems
+        3. Desired Situation
+        4. Addressed Requirements
+        5. IT Solutions
+    2. Library Management
+        1. Role and Perspective
+        2. Current Problems
+        3. Desired Situation
+        4. Addressed Requirements
+        5. IT Solutions
+    3. Visitors (Public Users)
+        1. Role and Perspective
+        2. Current Problems
+        3. Desired Situation
+        4. Addressed Requirements
+        5. IT Solutions
+    4. IT Support Personnel
+        1. Role and Perspective
+        2. Current Problems
+        3. Desired Situation
+        4. Addressed Requirements
+        5. IT Solutions
+    5. Teachers and Assessors
+        1. Role and Perspective
+        2. Current Problems
+        3. Desired Situation
+        4. Addressed Requirements
+        5. IT Solutions
+4. Functional Requirements and Corresponding IT Solutions
+    1. REQ-S2P1-01 Centralized User and Resource Management
+    2. REQ-S2P1-02 Structured and Segmented Network
+    3. REQ-S2P1-03 Secure Collaborative Storage
+    4. REQ-S2P1-04 Protected Public Online Presence
+    5. REQ-S2P1-05 Controlled Network Access at Boundaries
+    6. REQ-S2P1-06 Virtual Infrastructure Deployment
+    7. REQ-S2P1-07 Proactive System and Service Monitoring
+    8. REQ-S2P1-08 Automated Task Execution
+    9. REQ-S2P1-09 Defined Management Processes
+    10. REQ-S2P1-10 Standardized Workstation Management
+5. Conclusion
 
 ---
 
@@ -18,11 +66,31 @@ The current IT environment is fragmented, outdated, and difficult to manage, res
 
 ---
 
-# Stakeholder Identification and Analysis
+# Stakeholder Analysis
 
 The successful implementation of the new IT infrastructure depends on understanding the expectations and requirements of all relevant stakeholders. The following stakeholder groups have been identified.
 
 ---
+
+## Stakeholder Classification
+
+| Stakeholder            | Type     | Description                                             |
+| ---------------------- | -------- | ------------------------------------------------------- |
+| Library Staff          | Internal | Employees using IT systems daily                        |
+| Library Management     | Internal | Decision makers responsible for operations and strategy |
+| IT Support Personnel   | Internal | Maintain and manage infrastructure                      |
+| Visitors               | External | Public users of library digital services                |
+| Teachers and Assessors | External | Evaluate project implementation and learning outcomes   |
+
+## Stakeholder Interests and Expectations
+
+| Stakeholder            | Main Interests                                    | Concerns                                     | Expected Benefits                         |
+| ---------------------- | ------------------------------------------------- | -------------------------------------------- | ----------------------------------------- |
+| Library Staff          | Fast systems, file sharing, reliable workstations | Slow systems, data loss, inconsistent setups | Improved productivity and collaboration   |
+| Library Management     | Control, scalability, security                    | System failures, lack of visibility          | Reliable and future-proof infrastructure  |
+| Visitors               | Secure access, privacy, stable services           | Data privacy risks, unreliable systems       | Better digital experience                 |
+| IT Support             | Manageable infrastructure, automation, monitoring | Complex maintenance, lack of tools           | Easier administration and troubleshooting |
+| Teachers and Assessors | Clear documentation, correct implementation       | Missing requirements, poor structure         | Demonstration of competencies             |
 
 ## Library Staff
 
@@ -274,6 +342,6 @@ Centralized configuration ensures consistent workstation security and behavior.
 
 ---
 
-# 4. Conclusion
+# Conclusion
 
 The stakeholder and requirements analysis demonstrates that the proposed IT infrastructure addresses the needs of all relevant stakeholders by providing centralized management, secure resource access, network segmentation, monitoring capabilities, and standardized processes. The identified IT solutions form the foundation for a secure, scalable, and manageable infrastructure that supports operational efficiency and future digital services at The Knowledge Hub.
