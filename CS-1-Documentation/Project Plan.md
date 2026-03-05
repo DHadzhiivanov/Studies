@@ -1,30 +1,8 @@
-MoSCoW
 
-Stakeholder analysis:
+**Name:** David Hadzhiivanov
+**Student Number:**  570330
 
-Health check for existing infra
-- determine the type of project
-
-Analysis based on type of project:
-- determine capabilities
-- assess benefits
-- Assess risks
-- Analyze costs
-- Develop value scorecard
-
-Who are the stakeholders:
-- real leaders of that project
-- those affected
-- it can be a group of people
-
-Tables that must be included:
-- Everything from the pptx presentation
-
-Risk analysis
-
----
-
-# 1. Introduction
+# Introduction
 
 This document outlines the project plan for the IT infrastructure modernization of *The Knowledge Hub*. The goal of this project is to replace the outdated and fragmented IT environment with a structured, secure, and manageable infrastructure.
 
@@ -34,7 +12,7 @@ This project plan describes the scope of the project, stakeholder involvement, p
 
 ---
 
-# 2. Health Check of Existing Infrastructure
+# Health Check of Existing Infrastructure
 
 The current IT environment of *The Knowledge Hub* is outdated and lacks central management. Systems are fragmented and not properly integrated, which causes inefficiencies and security risks.
 
@@ -58,7 +36,7 @@ The goal is not to upgrade individual systems but to design and deploy a **struc
 
 ---
 
-# 3. Stakeholder Identification
+# Stakeholder Identification
 
 Stakeholders are individuals or groups that influence the project or are affected by its outcome.
 
@@ -72,7 +50,7 @@ Stakeholders are individuals or groups that influence the project or are affecte
 
 ---
 
-# 4. Project Capability Analysis
+# Project Capability Analysis
 
 The project aims to provide the following capabilities.
 
@@ -87,7 +65,7 @@ The project aims to provide the following capabilities.
 
 ---
 
-# 5. Benefit Assessment
+# Benefit Assessment
 
 | Benefit | Description |
 |--------|-------------|
@@ -98,7 +76,7 @@ The project aims to provide the following capabilities.
 
 ---
 
-# 6. Cost Considerations
+# Cost Considerations
 
 Since this is a small organization with limited budget, the infrastructure design prioritizes cost efficiency.
 
@@ -110,7 +88,7 @@ Since this is a small organization with limited budget, the infrastructure desig
 
 ---
 
-# 7. Risk Analysis
+# Risk Analysis
 
 Potential risks must be identified early so mitigation strategies can be applied.
 
@@ -123,7 +101,7 @@ Potential risks must be identified early so mitigation strategies can be applied
 
 ---
 
-# 8. MoSCoW Prioritization
+# MoSCoW Prioritization
 
 MoSCoW helps determine which project components are most critical.
 
@@ -153,7 +131,7 @@ MoSCoW helps determine which project components are most critical.
 
 ---
 
-# 9. Value Scorecard
+# Value Scorecard
 
 The value scorecard evaluates the expected value of the infrastructure.
 
@@ -166,7 +144,7 @@ The value scorecard evaluates the expected value of the infrastructure.
 
 ---
 
-# 10. Conclusion
+# Conclusion
 
 This project plan outlines the approach for implementing a modern IT infrastructure for *The Knowledge Hub*. By identifying stakeholders, assessing risks, and prioritizing requirements, the project provides a clear roadmap for building a secure and manageable environment.
 
