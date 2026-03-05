@@ -4,7 +4,7 @@
 
 # Introduction
 
-This document describes the functional requirements of the IT infrastructure for "The Knowledge Hub" library and outlines the technical solutions used to fulfill them. Each requirement is linked to the technical implementation tasks performed during the project.
+This document describes the functional requirements of the IT infrastructure for *The Knowledge Hub* library and outlines the technical solutions used to fulfill them. Each requirement is linked to the technical implementation tasks performed during the project.
 
 ---
 

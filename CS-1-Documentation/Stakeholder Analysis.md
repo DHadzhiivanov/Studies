@@ -6,19 +6,19 @@
 
 # Introduction
 
-This document presents a stakeholder and requirements analysis for the IT infrastructure modernization project at The Knowledge Hub library. The objective of this analysis is to identify key stakeholder groups, understand their needs and concerns, and determine how the defined functional requirements address these needs through appropriate ICT solutions.
+This document presents a stakeholder and requirements analysis for the IT infrastructure modernization project at *The Knowledge Hub* library. The objective of this analysis is to identify key stakeholder groups, understand their needs and concerns, and determine how the defined functional requirements address these needs through appropriate ICT solutions.
 
 ---
 
 # Main Problem
 
-The current IT environment is fragmented, outdated, and difficult to manage, resulting in reduced staff productivity, limited digital services for visitors, and maintenance challenges for IT personnel. The proposed infrastructure aims to provide a secure, scalable, and manageable foundation that supports future digital services while addressing current operational limitations.
+The current IT environment is **fragmented**, **outdated**, and **difficult to manage**, resulting in **reduced staff productivity**, **limited digital services** for visitors, and **maintenance challenges** for IT personnel. The proposed infrastructure aims to provide a secure, scalable, and manageable foundation that supports future digital services while addressing current operational limitations.
 
 ---
 
 # Stakeholder Analysis
 
-The successful implementation of the new IT infrastructure depends on understanding the expectations and requirements of all relevant stakeholders. The following stakeholder groups have been identified.
+The successful implementation of the new IT infrastructure depends on understanding the expectations and requirements of all relevant stakeholders.
 
 ---
 
@@ -206,6 +206,70 @@ Teachers and assessors expect a structured, well-documented implementation that 
 
 ---
 
+# Advanced Stakeholder Analysis
+
+To better understand the influence of each stakeholder on the project, stakeholders are analyzed based on their **level of power and level of interest** in the project. This helps determine how actively they should be managed and involved in communication.
+
+## Stakeholder Power-Interest Matrix
+
+|Stakeholder|Power|Interest|Management Strategy|
+|---|---|---|---|
+|Library Management|High|High|Manage closely and involve in major decisions|
+|IT Support Personnel|High|High|Manage closely and involve in technical decisions|
+|Library Staff|Medium|High|Keep informed and collect feedback|
+|Teachers and Assessors|Medium|High|Provide regular updates and documentation|
+|Visitors|Low|Medium|Monitor satisfaction and ensure service availability|
+
+### Interpretation
+
+Stakeholders with **high power and high interest** must be closely managed because their decisions and feedback directly influence the project's success. Stakeholders with **high interest but lower power** should be kept informed and involved where appropriate.
+
+This analysis helps prioritize communication and ensures that important stakeholders remain engaged throughout the project.
+
+---
+
+# Communication Plan
+
+A structured communication plan ensures that stakeholders remain informed about the progress of the project and can provide feedback when necessary.
+
+## Stakeholder Communication Plan
+
+|Stakeholder|Information Needs|Communication Method|Frequency|Responsible|
+|---|---|---|---|---|
+|Library Management|Project progress, risks, major decisions|Progress reports, meetings|Weekly / milestone based|Project team|
+|Library Staff|Changes to systems, new tools, training|Demonstrations, documentation|During implementation|IT support|
+|IT Support Personnel|Technical configuration, system updates|Technical documentation, meetings|Continuous|Project team|
+|Teachers and Assessors|Project progress, deliverables|Presentations, documentation review|Weekly checkpoints|Student|
+|Visitors|Availability of public services|Informational signage or website|When services change|Library staff|
+
+### Communication Approach
+
+The communication approach focuses on **clear documentation, regular updates, and feedback collection**. Different stakeholders require different levels of information depending on their role and influence within the project.
+
+---
+
+# Stakeholder Risk Analysis
+
+Stakeholders can also introduce risks to the project if their expectations, influence, or cooperation are not properly managed.
+
+## Stakeholder Risk Assessment
+
+|Stakeholder|Potential Risk|Impact|Mitigation Strategy|
+|---|---|---|---|
+|Library Management|Changing priorities or requirements|Medium|Maintain regular communication and progress updates|
+|Library Staff|Resistance to new systems|Medium|Provide training and clear documentation|
+|IT Support Personnel|Limited availability (part-time support)|High|Ensure documentation and automation tools are implemented|
+|Visitors|Misuse of public systems|Low|Implement network segmentation and access restrictions|
+|Teachers and Assessors|Requirements not fully addressed|High|Maintain structured documentation and request feedback|
+
+### Risk Evaluation
+
+Managing stakeholder-related risks requires **clear communication, proper documentation, and stakeholder involvement throughout the project lifecycle**. Addressing these risks early helps ensure smoother implementation and better adoption of the new infrastructure.
+
+---
+
 # Conclusion
 
-The stakeholder and requirements analysis demonstrates that the proposed IT infrastructure addresses the needs of all relevant stakeholders by providing centralized management, secure resource access, network segmentation, monitoring capabilities, and standardized processes. The identified IT solutions form the foundation for a secure, scalable, and manageable infrastructure that supports operational efficiency and future digital services at The Knowledge Hub.
+This stakeholder analysis identified the key groups involved in or affected by the IT infrastructure project at *The Knowledge Hub*. By analyzing their needs, interests, and influence, it becomes clearer how the proposed infrastructure supports both operational and organizational goals.  
+  
+The communication plan and stakeholder risk analysis help ensure that stakeholders remain informed and that potential conflicts or risks can be addressed early. Together, these elements provide a structured foundation for the design and implementation of the new IT environment.
