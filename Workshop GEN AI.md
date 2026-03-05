@@ -14,10 +14,4 @@ Based on research by Rabobank researchers as written in a statement in the econo
 
 # How do you plan to develop your core knowledge and skills?
 
-Will i use AI?
-
-Think about it honestly.
-
-Think about your future.
-
-Link it to LO?.
+I plan to use AI strategically as a learning tool, not a crutch. Specifically, I use it to clarify concepts I don't understand, validate my design thinking, and structure documentation professionally. However, I ensure I understand the "why" behind every decision. I will NOT use AI to skip the hard thinking or pretend knowledge I don't have. The goal is to enhance my critical thinking by automating the routine parts so I can focus mental effort on the technical decisions that matter. This means I'm more likely to develop deeper expertise, not less.

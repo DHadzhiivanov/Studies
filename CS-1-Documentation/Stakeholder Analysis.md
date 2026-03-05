@@ -4,56 +4,6 @@
 
 ---
 
-# Table of Contents
-
-1. Introduction
-2. Main Problem
-3. Stakeholder Identification and Analysis
-    1. Library Staff
-        1. Role and Perspective
-        2. Current Problems
-        3. Desired Situation
-        4. Addressed Requirements
-        5. IT Solutions
-    2. Library Management
-        1. Role and Perspective
-        2. Current Problems
-        3. Desired Situation
-        4. Addressed Requirements
-        5. IT Solutions
-    3. Visitors (Public Users)
-        1. Role and Perspective
-        2. Current Problems
-        3. Desired Situation
-        4. Addressed Requirements
-        5. IT Solutions
-    4. IT Support Personnel
-        1. Role and Perspective
-        2. Current Problems
-        3. Desired Situation
-        4. Addressed Requirements
-        5. IT Solutions
-    5. Teachers and Assessors
-        1. Role and Perspective
-        2. Current Problems
-        3. Desired Situation
-        4. Addressed Requirements
-        5. IT Solutions
-4. Functional Requirements and Corresponding IT Solutions
-    1. REQ-S2P1-01 Centralized User and Resource Management
-    2. REQ-S2P1-02 Structured and Segmented Network
-    3. REQ-S2P1-03 Secure Collaborative Storage
-    4. REQ-S2P1-04 Protected Public Online Presence
-    5. REQ-S2P1-05 Controlled Network Access at Boundaries
-    6. REQ-S2P1-06 Virtual Infrastructure Deployment
-    7. REQ-S2P1-07 Proactive System and Service Monitoring
-    8. REQ-S2P1-08 Automated Task Execution
-    9. REQ-S2P1-09 Defined Management Processes
-    10. REQ-S2P1-10 Standardized Workstation Management
-5. Conclusion
-
----
-
 # Introduction
 
 This document presents a stakeholder and requirements analysis for the IT infrastructure modernization project at The Knowledge Hub library. The objective of this analysis is to identify key stakeholder groups, understand their needs and concerns, and determine how the defined functional requirements address these needs through appropriate ICT solutions.
@@ -112,10 +62,10 @@ Staff require reliable systems, fast access to shared resources, secure document
 
 ### Addressed Requirements
 
-- [[#REQ-S2P1-01 Centralized User and Resource Management|REQ-S2P1-01]] Centralized User and Resource Management
-- [[#REQ-S2P1-03 Secure Collaborative Storage|REQ-S2P1-03]] Secure Collaborative Storage
-- [[#REQ-S2P1-10 Standardized Workstation Management|REQ-S2P1-10]] Standardized Workstation Management
-- [[#REQ-S2P1-02 Structured and Segmented Network|REQ-S2P1-02]] Structured and Segmented Network
+- **REQ-S2P1-01** Centralized User and Resource Management
+- **REQ-S2P1-03** Secure Collaborative Storage
+- **REQ-S2P1-10** Standardized Workstation Management
+- **REQ-S2P1-02** Structured and Segmented Network
 
 ### IT Solutions
 
@@ -145,10 +95,10 @@ Management requires a scalable and secure infrastructure with centralized contro
 
 ### Addressed Requirements
 
-- [[#REQ-S2P1-07 Proactive System and Service Monitoring| REQ-S2P1-07]] Proactive System and Service Monitoring
-- [[#REQ-S2P1-08 Automated Task Execution|REQ-S2P1-08]] Automated Task Execution
-- [[#REQ-S2P1-09 Defined Management Processes|REQ-S2P1-09]] Defined Management Processes
-- [[#REQ-S2P1-06 Virtual Infrastructure Deployment|REQ-S2P1-06]] Virtual Infrastructure Deployment
+- **REQ-S2P1-07** Proactive System and Service Monitoring
+- **REQ-S2P1-08** Automated Task Execution
+- **REQ-S2P1-09** Defined Management Processes
+- **REQ-S2P1-06** Virtual Infrastructure Deployment
 
 ### IT Solutions
 
@@ -178,9 +128,9 @@ Visitors expect secure access to public services, stable systems, and protection
 
 ### Addressed Requirements
 
-- [[#REQ-S2P1-02 Structured and Segmented Network|REQ-S2P1-02]] Structured and Segmented Network
-- [[#REQ-S2P1-04 Protected Public Online Presence|REQ-S2P1-04]] Protected Public Online Presence
-- [[#REQ-S2P1-05 Controlled Network Access at Boundaries|REQ-S2P1-05]] Controlled Network Access at Boundaries
+- **REQ-S2P1-02** Structured and Segmented Network
+- **REQ-S2P1-04** Protected Public Online Presence
+- **REQ-S2P1-05** Controlled Network Access at Boundaries
 
 ### IT Solutions
 
@@ -210,10 +160,10 @@ IT support requires centralized management tools, automation capabilities, monit
 
 ### Addressed Requirements
 
-- [[#REQ-S2P1-07 Proactive System and Service Monitoring|REQ-S2P1-07]] Proactive System and Service Monitoring
-- [[#REQ-S2P1-08 Automated Task Execution|REQ-S2P1-08]] Automated Task Execution
-- [[#REQ-S2P1-09 Defined Management Processes|REQ-S2P1-09]] Defined Management Processes
-- [[#REQ-S2P1-06 Virtual Infrastructure Deployment|REQ-S2P1-06]] Virtual Infrastructure Deployment
+- **REQ-S2P1-07** Proactive System and Service Monitoring
+- **REQ-S2P1-08** Automated Task Execution
+- **REQ-S2P1-09** Defined Management Processes
+- **REQ-S2P1-06** Virtual Infrastructure Deployment
 
 ### IT Solutions
 
@@ -242,10 +192,10 @@ Teachers and assessors expect a structured, well-documented implementation that 
 
 ### Addressed Requirements
 
-- [[#REQ-S2P1-07 Proactive System and Service Monitoring|REQ-S2P1-07]] Proactive Monitoring
-- [[#REQ-S2P1-08 Automated Task Execution|REQ-S2P1-08]] Automated Task Execution
-- [[#REQ-S2P1-09 Defined Management Processes|REQ-S2P1-09]] Defined Management Processes
-- [[#REQ-S2P1-06 Virtual Infrastructure Deployment|REQ-S2P1-06]] Virtual Infrastructure Deployment
+- **REQ-S2P1-07** Proactive Monitoring
+- **REQ-S2P1-08** Automated Task Execution
+- **REQ-S2P1-09** Defined Management Processes
+- **REQ-S2P1-06** Virtual Infrastructure Deployment
 
 ### IT Solutions
 
@@ -253,92 +203,6 @@ Teachers and assessors expect a structured, well-documented implementation that 
 - Implementation of monitoring and automation tools
 - Structured system architecture and management processes
 - Clear justification of technical decisions
-
----
-
-# Functional Requirements and Corresponding IT Solutions
-
-The following section explains how each functional requirement is implemented through technical solutions.
-
----
-
-## REQ-S2P1-01 Centralized User and Resource Management
-
-A central directory service provides authentication and authorization for users and systems. This enables controlled access to resources and centralized user administration.
-
-**Implementation:** Domain-based identity management, centralized authentication, and role-based access control.
-
----
-
-## REQ-S2P1-02 Structured and Segmented Network
-
-The network is logically divided into separate zones to improve security and organization.
-
-**Implementation:** Segmented network architecture with distinct zones for servers, staff workstations, public systems, and public services, including automated network configuration.
-
----
-
-## REQ-S2P1-03 Secure Collaborative Storage
-
-A centralized storage location enables secure document sharing and access control based on user roles.
-
-**Implementation:** Central file server with permission management linked to the directory service.
-
----
-
-## REQ-S2P1-04 Protected Public Online Presence
-
-Public services are deployed in a dedicated network zone to minimize risks to internal resources.
-
-**Implementation:** Deployment of public services in a demilitarized zone with controlled access.
-
----
-
-## REQ-S2P1-05 Controlled Network Access at Boundaries
-
-All traffic between network segments is filtered to enforce security policies.
-
-**Implementation:** Firewall-based traffic inspection and filtering.
-
----
-
-## REQ-S2P1-06 Virtual Infrastructure Deployment
-
-Virtualization provides logical separation of services and efficient resource utilization.
-
-**Implementation:** Virtual machines hosting core services and network components.
-
----
-
-## REQ-S2P1-07 Proactive System and Service Monitoring
-
-System performance and availability are continuously monitored.
-
-**Implementation:** Monitoring tools and scripts collecting performance metrics and generating alerts.
-
----
-
-## REQ-S2P1-08 Automated Task Execution
-
-Administrative tasks are automated to improve efficiency.
-
-**Implementation:** Scripting environment and automated procedures.
-
----
-
-## REQ-S2P1-09 Defined Management Processes
-
-Structured processes manage system changes and incident resolution.
-
-**Implementation:** Defined incident and change management workflows.
-
----
-
-## REQ-S2P1-10 Standardized Workstation Management
-
-Centralized configuration ensures consistent workstation security and behavior.
-
-**Implementation:** Centrally enforced configuration policies and system updates.
 
 ---
 
