@@ -4,6 +4,56 @@
 
 ---
 
+# Table of Contents
+
+1. Introduction
+2. Main Problem
+3. Stakeholder Analysis
+    1. Stakeholder Classification
+    2. Stakeholder Interests and Expectations
+    3. Library Staff
+        1. Role and Perspective
+        2. Current Problems
+        3. Desired Situation
+        4. Addressed Requirements
+        5. IT Solutions
+    4. Library Management
+        1. Role and Perspective
+        2. Current Problems
+        3. Desired Situation
+        4. Addressed Requirements
+        5. IT Solutions
+    5. Visitors (Public Users)
+        1. Role and Perspective
+        2. Current Problems
+        3. Desired Situation
+        4. Addressed Requirements
+        5. IT Solutions
+    6. IT Support Personnel
+        1. Role and Perspective
+        2. Current Problems
+        3. Desired Situation
+        4. Addressed Requirements
+        5. IT Solutions
+    7. Teachers and Assessors
+        1. Role and Perspective
+        2. Current Problems
+        3. Desired Situation
+        4. Addressed Requirements
+        5. IT Solutions
+4. Advanced Stakeholder Analysis
+    1. Stakeholder Power-Interest Matrix
+        1. Interpretation
+5. Communication Plan
+    1. Stakeholder Communication Plan
+        1. Communication Approach
+6. Stakeholder Risk Analysis
+    1. Stakeholder Risk Assessment
+        1. Risk Evaluation
+7. Conclusion
+
+---
+
 # Introduction
 
 This document presents a stakeholder and requirements analysis for the IT infrastructure modernization project at *The Knowledge Hub* library. The objective of this analysis is to identify key stakeholder groups, understand their needs and concerns, and determine how the defined functional requirements address these needs through appropriate ICT solutions.

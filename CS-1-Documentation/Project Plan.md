@@ -4,6 +4,27 @@
 
 ---
 
+# Table of Contents
+
+1. Introduction
+2. Health Check of Existing Infrastructure
+        1. Observed Issues
+        2. Type of Project
+3. Stakeholder Identification
+4. Project Capability Analysis
+5. Benefit Assessment
+6. Cost Considerations
+7. Risk Analysis
+8. MoSCoW Prioritization
+    1. Must Have
+    2. Should Have
+    3. Could Have
+    4. Won't Have (for this phase)
+9. Value Scorecard
+10. Conclusion
+
+---
+
 # Introduction
 
 This document outlines the project plan for the IT infrastructure modernization of *The Knowledge Hub*. The goal of this project is to replace the outdated and fragmented IT environment with a structured, secure, and manageable infrastructure.
@@ -82,11 +103,12 @@ The project aims to provide the following capabilities.
 
 Since this is a small organization with limited budget, the infrastructure design prioritizes cost efficiency.
 
-| Cost Factor | Approach |
-|-------------|----------|
-| Hardware resources | Use of virtualization |
-| Licensing | Combination of Windows and open-source solutions |
-| Maintenance | Automation and monitoring to reduce manual work |
+| Cost Factor        | Approach                                         |
+| ------------------ | ------------------------------------------------ |
+| Hardware resources | Use of virtualization                            |
+| Licensing          | Combination of Windows and open-source solutions |
+| Maintenance        | Automation and monitoring to reduce manual work  |
+| Network design     | 2 Layer design                                   |
 
 ---
 

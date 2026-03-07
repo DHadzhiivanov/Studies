@@ -4,6 +4,54 @@
 
 ---
 
+# Table of Contents
+
+1. Introduction
+2. Functional Requirements and Corresponding IT Solutions
+    1. REQ-S2P1-01 – Centralized User and Resource Management
+        1. Requirement Description
+        2. Implementation
+        3. Corresponding Tasks
+    2. REQ-S2P1-02 – Structured and Segmented Network
+        1. Requirement Description
+        2. Implementation
+        3. Corresponding Tasks
+    3. REQ-S2P1-03 – Secure Collaborative Storage
+        1. Requirement Description
+        2. Implementation
+        3. Corresponding Tasks
+    4. REQ-S2P1-04 – Protected Public Online Presence
+        1. Requirement Description
+        2. Implementation
+        3. Corresponding Tasks
+    5. REQ-S2P1-05 – Controlled Network Access at Boundaries
+        1. Requirement Description
+        2. Implementation
+        3. Corresponding Tasks
+    6. REQ-S2P1-06 – Virtual Infrastructure Deployment
+        1. Requirement Description
+        2. Implementation
+        3. Corresponding Tasks
+    7. REQ-S2P1-07 – Proactive System and Service Monitoring
+        1. Requirement Description
+        2. Implementation
+        3. Corresponding Tasks
+    8. REQ-S2P1-08 – Automated Task Execution
+        1. Requirement Description
+        2. Implementation
+        3. Corresponding Tasks
+    9. REQ-S2P1-09 – Defined Management Processes
+        1. Requirement Description
+        2. Implementation
+        3. Corresponding Tasks
+    10. REQ-S2P1-10 – Standardized Workstation Management
+        1. Requirement Description
+        2. Implementation
+        3. Corresponding Tasks
+3. Conclusion
+
+---
+
 # Introduction
 
 This document describes the functional requirements of the IT infrastructure for *The Knowledge Hub* library and outlines the technical solutions used to fulfill them. Each requirement is linked to the technical implementation tasks performed during the project.
