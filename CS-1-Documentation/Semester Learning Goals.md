@@ -1,6 +1,6 @@
-			**Student:** David Hadzhiivanov  
-**Course:** Networking Basics - Semester 2  
-**Primary Tool:** GNS3  
+
+**Name:** David Hadzhiivanov
+**Student Number:** 570330
 
 ---
 
