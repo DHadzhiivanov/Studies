@@ -1,6 +1,8 @@
 
 **Name:** David Hadzhiivanov
-**Student Number:**  570330
+**Student Number:** 570330
+
+---
 
 # Introduction
 
