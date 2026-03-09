@@ -25,7 +25,7 @@ if (headings.length === 0) {
 
   for (const heading of headings) {
     const indent = "    ".repeat(heading.level - minLevel);
-    tocLines.push(`${indent}1. ${heading.text}`);
+    tocLines.push(`${indent}- [[#${heading.text}|${heading.text}]]`);
   }
 
   tR += tocLines.join('\n');
