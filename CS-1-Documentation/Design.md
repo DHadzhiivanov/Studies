@@ -10,7 +10,7 @@
 - [[#2. Design Goals|2. Design Goals]]
 - [[#3. High-Level Network Architecture|3. High-Level Network Architecture]]
     - [[#3.1 Access Layer|3.1 Access Layer]]
-    - [[#3.2 Edge Layer (Firewall / Routing)|3.2 Edge Layer (Firewall / Routing)]]
+    - [[#3.2 Core Layer (Firewall / Routing)|3.2 Core Layer (Firewall / Routing)]]
 - [[#4. VLAN and IP Design|4. VLAN and IP Design]]
 - [[#5. Core Infrastructure Services|5. Core Infrastructure Services]]
     - [[#5.1 Active Directory Domain Controller|5.1 Active Directory Domain Controller]]
