@@ -268,7 +268,6 @@ This firewall policy ensures that internal services remain protected while still
 
 The network diagram illustrates the relationship between the router, switch, servers, and network segments.
 
-
 ![](Network%20Diagram.svg)
 
 ---
