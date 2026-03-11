@@ -6,6 +6,18 @@
 
 # Table of Contents
 
+- [[#1. Introduction|1. Introduction]]
+- [[#2. Project Approach|2. Project Approach]]
+- [[#3. Planned Workflow|3. Planned Workflow]]
+    - [[#3.1 Phase 1 - Requirement Analysis|3.1 Phase 1 - Requirement Analysis]]
+    - [[#3.2 Phase 2 - Stakeholder Analysis|3.2 Phase 2 - Stakeholder Analysis]]
+    - [[#3.3 Phase 3 - Network Design|3.3 Phase 3 - Network Design]]
+    - [[#3.4 Phase 4 - Implementation|3.4 Phase 4 - Implementation]]
+    - [[#3.5 Phase 5 - Testing and Validation|3.5 Phase 5 - Testing and Validation]]
+    - [[#3.6 Phase 6 - Documentation and Finalization|3.6 Phase 6 - Documentation and Finalization]]
+- [[#4. Task Planning and Organization|4. Task Planning and Organization]]
+- [[#5. Conclusion|5. Conclusion]]
+
 ---
 
 # 1. Introduction
@@ -35,7 +47,7 @@ Each phase builds upon the previous one to gradually develop the complete networ
 
 # 3. Planned Workflow
 
-### Phase 1 - Requirement Analysis
+## 3.1 Phase 1 - Requirement Analysis
 
 The first step of the project is identifying the technical and organizational requirements of the network.
 
@@ -50,7 +62,7 @@ Requirement Analysis document.
 
 ---
 
-### Phase 2 - Stakeholder Analysis
+## 3.2 Phase 2 - Stakeholder Analysis
 
 In this phase the different stakeholders of the project are identified and their needs are analyzed.
 
@@ -65,7 +77,7 @@ Stakeholder Analysis document.
 
 ---
 
-### Phase 3 - Network Design
+## 3.3 Phase 3 - Network Design
 
 After defining the requirements, the network architecture is designed.
 
@@ -82,7 +94,7 @@ Design document.
 
 ---
 
-### Phase 4 - Implementation
+## 3.4 Phase 4 - Implementation
 
 During the implementation phase, the designed network is built inside the simulation environment.
 
@@ -98,7 +110,7 @@ Working simulated network environment.
 
 ---
 
-### Phase 5 - Testing and Validation
+## 3.5 Phase 5 - Testing and Validation
 
 Once the network is implemented, testing is performed to verify correct functionality.
 
@@ -114,7 +126,7 @@ Test results confirming correct operation.
 
 ---
 
-### Phase 6 - Documentation and Finalization
+## 3.6 Phase 6 - Documentation and Finalization
 
 The final stage focuses on documenting the project and preparing the final deliverables.
 

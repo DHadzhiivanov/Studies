@@ -35,6 +35,12 @@ This project plan describes the scope of the project, stakeholder involvement, p
 
 ---
 
+# Main Questions
+
+## Sub Questions
+
+---
+
 # 2. Health Check of Existing Infrastructure
 
 The current IT environment of *The Knowledge Hub* is outdated and lacks central management. Systems are fragmented and not properly integrated, which causes inefficiencies and security risks.
