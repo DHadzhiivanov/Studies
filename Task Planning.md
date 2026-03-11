@@ -1,0 +1,29 @@
+- [x] Analyze Stakeholders ⏫ ✅ 2026-03-11
+	- [x] Classify ✅ 2026-03-11
+	- [x] Define Interests and Expectations ✅ 2026-03-11
+	- [x] Define Roles ✅ 2026-03-11
+		- [x] Define Problems ✅ 2026-03-11
+		- [x] Define Desires ✅ 2026-03-11
+		- [x] Address Requirements ✅ 2026-03-11
+		- [x] Define Solutions ✅ 2026-03-11
+	- [x] Advanced Analysis ✅ 2026-03-11
+		- [x] Power Matrix ✅ 2026-03-11
+			- [x] Interpretation ✅ 2026-03-11
+	- [x] Communication Plan ✅ 2026-03-11
+		- [x] Plan ✅ 2026-03-11
+			- [x] Approach ✅ 2026-03-11
+	- [x] Risk Analysis ✅ 2026-03-11
+		- [x] Risk Assessment ✅ 2026-03-11
+			- [x] Evaluation ✅ 2026-03-11
+- [x] Analyze Requirements ⏫ ✅ 2026-03-11
+	- [x] Connect to Learning Outcomes ✅ 2026-03-11
+- [x] Project Analysis ⏫ ✅ 2026-03-11
+	- [x] Health Check ✅ 2026-03-11
+		- [x] Issues ✅ 2026-03-11
+	- [x] Capability Analysis ✅ 2026-03-11
+	- [x] Assess Benefits ✅ 2026-03-11
+	- [x] Consider Costs ✅ 2026-03-11
+	- [x] Risk Analysis ✅ 2026-03-11
+	- [x] MoSCoW ✅ 2026-03-11
+	- [x] Value Scorecard ✅ 2026-03-11
+- [ ] 
