@@ -4,6 +4,26 @@
 
 ---
 
+# Table of Contents
+
+- [[#1. Introduction|1. Introduction]]
+    - [[#2. Context|2. Context]]
+    - [[#3. Research Questions|3. Research Questions]]
+    - [[#3.1 Main Research Question|3.1 Main Research Question]]
+        - [[#3.1.1 Sub-Questions|3.1.1 Sub-Questions]]
+    - [[#4. Plan to Answer the Research Questions|4. Plan to Answer the Research Questions]]
+    - [[#5. Research Pattern & Strategy|5. Research Pattern & Strategy]]
+- [[#6. Research Topics|6. Research Topics]]
+    - [[#6.1 Research Entry 1|6.1 Research Entry 1]]
+        - [[#6.1.1 Topic|6.1.1 Topic]]
+        - [[#6.1.2 Reason for Research|6.1.2 Reason for Research]]
+        - [[#6.1.3 Research Sources|6.1.3 Research Sources]]
+        - [[#6.1.4 Key Findings|6.1.4 Key Findings]]
+        - [[#6.1.5 Application to the Project|6.1.5 Application to the Project]]
+- [[#7. Conclusion|7. Conclusion]]
+
+---
+
 # 1. Introduction
 
 This document records the research conducted during the development of the IT infrastructure for *The Knowledge Hub*. The purpose of this research log is to document the topics that required further investigation, the resources used to understand them, and how the research influenced the technical decisions made during the project.

@@ -7,21 +7,23 @@
 # Table of Contents
 
 - [[#1. Introduction|1. Introduction]]
-- [[#2. Health Check of Existing Infrastructure|2. Health Check of Existing Infrastructure]]
-    - [[#2.1 Observed Issues|2.1 Observed Issues]]
-    - [[#2.2 Type of Project|2.2 Type of Project]]
-- [[#3. Stakeholder Identification|3. Stakeholder Identification]]
-- [[#4. Project Capability Analysis|4. Project Capability Analysis]]
-- [[#5. Benefit Assessment|5. Benefit Assessment]]
-- [[#6. Cost Considerations|6. Cost Considerations]]
-- [[#7. Risk Analysis|7. Risk Analysis]]
-- [[#8. MoSCoW Prioritization|8. MoSCoW Prioritization]]
-    - [[#8.1 Must Have|8.1 Must Have]]
-    - [[#8.2 Should Have|8.2 Should Have]]
-    - [[#8.3 Could Have|8.3 Could Have]]
-    - [[#8.4 Won't Have|8.4 Won't Have]]
-- [[#9. Value Scorecard|9. Value Scorecard]]
-- [[#10. Conclusion|10. Conclusion]]
+- [[#2. Main Questions|2. Main Questions]]
+    - [[#2.1 Sub Questions|2.1 Sub Questions]]
+- [[#3. Health Check of Existing Infrastructure|3. Health Check of Existing Infrastructure]]
+    - [[#3.1 Observed Issues|3.1 Observed Issues]]
+    - [[#3.2 Type of Project|3.2 Type of Project]]
+- [[#4. Stakeholder Identification|4. Stakeholder Identification]]
+- [[#5. Project Capability Analysis|5. Project Capability Analysis]]
+- [[#6. Benefit Assessment|6. Benefit Assessment]]
+- [[#7. Cost Considerations|7. Cost Considerations]]
+- [[#8. Risk Analysis|8. Risk Analysis]]
+- [[#9. MoSCoW Prioritization|9. MoSCoW Prioritization]]
+    - [[#9.1 Must Have|9.1 Must Have]]
+    - [[#9.2 Should Have|9.2 Should Have]]
+    - [[#9.3 Could Have|9.3 Could Have]]
+    - [[#9.4 Won't Have|9.4 Won't Have]]
+- [[#10. Value Scorecard|10. Value Scorecard]]
+- [[#11. Conclusion|11. Conclusion]]
 
 ---
 
@@ -35,17 +37,24 @@ This project plan describes the scope of the project, stakeholder involvement, p
 
 ---
 
-# Main Questions
+# 2. Main Questions
 
-## Sub Questions
+How can old systems be modernized to ensure efficiency in scalability, security and costs?
+
+## 2.1 Sub Questions
+
+1. What will the topology look like?
+2. Which centralized services are needed?
+3. How is security going to be enforced?
+4. What could be considered cost-effective?
 
 ---
 
-# 2. Health Check of Existing Infrastructure
+# 3. Health Check of Existing Infrastructure
 
 The current IT environment of *The Knowledge Hub* is outdated and lacks central management. Systems are fragmented and not properly integrated, which causes inefficiencies and security risks.
 
-## 2.1 Observed Issues
+## 3.1 Observed Issues
 
 | Issue | Impact |
 |------|------|
@@ -55,7 +64,7 @@ The current IT environment of *The Knowledge Hub* is outdated and lacks central 
 | Limited monitoring | Failures are detected too late |
 | Inconsistent workstation configurations | Management overhead |
 
-## 2.2 Type of Project
+## 3.2 Type of Project
 
 Based on the health check, this project can be classified as:
 
@@ -65,7 +74,7 @@ The goal is not to upgrade individual systems but to design and deploy a **struc
 
 ---
 
-# 3. Stakeholder Identification
+# 4. Stakeholder Identification
 
 Stakeholders are individuals or groups that influence the project or are affected by its outcome.
 
@@ -79,7 +88,7 @@ Stakeholders are individuals or groups that influence the project or are affecte
 
 ---
 
-# 4. Project Capability Analysis
+# 5. Project Capability Analysis
 
 The project aims to provide the following capabilities.
 
@@ -94,7 +103,7 @@ The project aims to provide the following capabilities.
 
 ---
 
-# 5. Benefit Assessment
+# 6. Benefit Assessment
 
 | Benefit | Description |
 |--------|-------------|
@@ -105,7 +114,7 @@ The project aims to provide the following capabilities.
 
 ---
 
-# 6. Cost Considerations
+# 7. Cost Considerations
 
 Since this is a small organization with limited budget, the infrastructure design prioritizes cost efficiency.
 
@@ -118,7 +127,7 @@ Since this is a small organization with limited budget, the infrastructure desig
 
 ---
 
-# 7. Risk Analysis
+# 8. Risk Analysis
 
 Potential risks must be identified early so mitigation strategies can be applied.
 
@@ -131,11 +140,11 @@ Potential risks must be identified early so mitigation strategies can be applied
 
 ---
 
-# 8. MoSCoW Prioritization
+# 9. MoSCoW Prioritization
 
 MoSCoW helps determine which project components are most critical.
 
-## 8.1 Must Have
+## 9.1 Must Have
 
 - Active Directory Domain Controller
 - Network segmentation
@@ -143,25 +152,25 @@ MoSCoW helps determine which project components are most critical.
 - Firewall and secure network boundaries
 - Virtualized infrastructure
 
-## 8.2 Should Have
+## 9.2 Should Have
 
 - Monitoring scripts
 - Web server with HTTPS
 - Automated administrative tasks
 
-## 8.3 Could Have
+## 9.3 Could Have
 
 - Advanced monitoring dashboards
 - Extended automation features
 
-## 8.4 Won't Have
+## 9.4 Won't Have
 
 - Cloud integration
 - Large-scale high availability systems
 
 ---
 
-# 9. Value Scorecard
+# 10. Value Scorecard
 
 The value scorecard evaluates the expected value of the infrastructure.
 
@@ -174,7 +183,7 @@ The value scorecard evaluates the expected value of the infrastructure.
 
 ---
 
-# 10. Conclusion
+# 11. Conclusion
 
 This project plan outlines the approach for implementing a modern IT infrastructure for *The Knowledge Hub*. By identifying stakeholders, assessing risks, and prioritizing requirements, the project provides a clear roadmap for building a secure and manageable environment.
 

@@ -1,10 +1,10 @@
-# What is Research
+# 1. What is Research
 
 Research can be defined as the act of creating new knowledge or learning new knowledge to apply it.
 
 ---
 
-# Reason for Research
+# 2. Reason for Research
 
 The reason is to find solutions to immediate problems and focus on the product.
 
@@ -14,7 +14,7 @@ It is not a separated task, but a way to achieve things systematically using exi
 
 ---
 
-# Possible Research
+# 3. Possible Research
 
 - Investigating Stakeholder Wishes
 - Choosing most appropriate technology
@@ -23,7 +23,7 @@ It is not a separated task, but a way to achieve things systematically using exi
 
 ---
 
-# DOT Setup
+# 4. DOT Setup
 
 Development Oriented Triangulation.
 
@@ -53,42 +53,42 @@ Another key is to be AWARE of your research.
 
 ---
 
-# How to Formulate Questions
+# 5. How to Formulate Questions
 
 - Choose your topic
 - Do some preliminary reading about the current state of the field
 - Narrow your focus to a specific niche
 - Identify the research question
 
-## Relevance
+## 5.1 Relevance
 
 Does it align with the main goal?
 
-## Neutrality
+## 5.2 Neutrality
 
 Is it unbiased and open-ended?
 
 - Avoid sneaking solutions
 
-## Open-endedness
+## 5.3 Open-endedness
 
 Does it invite exploration, not a yes/no?
 
 - Aim for depth
 
-## Functionality
+## 5.4 Functionality
 
 Does it help understand the problem or guide the solution?
 
 - Must clearly serve the professional purpose.
 
-## Feasibility
+## 5.5 Feasibility
 
 Can you realistically answer it within available time and resources?
 
-- Dont overcommit
+- Don't over-commit
 
-## Clarity
+## 5.6 Clarity
 
 Is the question understandable and clear?
 
@@ -96,7 +96,7 @@ Is the question understandable and clear?
 
 ---
 
-# Exercise
+# 6. Exercise
 
 Think of a main research question.
 
