@@ -271,6 +271,17 @@ The network diagram illustrates the relationship between the router, switch, ser
 ![](Network%20Diagram.svg)
 
 ---
+# Domain Controller
+
+---
+
+# File Server
+
+---
+
+# Web Server
+
+---
 
 # 11. Conclusion
 
