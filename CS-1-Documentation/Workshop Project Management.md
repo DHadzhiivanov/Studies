@@ -41,7 +41,7 @@
 # 2. Methodologies
 
 Agile
-Scrum !
+Scrum
 Kanban
 Scrumban
 Lean

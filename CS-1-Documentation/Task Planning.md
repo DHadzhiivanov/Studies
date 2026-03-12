@@ -80,12 +80,12 @@
 
 # Implementation
 
-- [ ] Set Topology ⏫
-	- [ ] Study Topology Practices
+- [x] Set Topology ⏫ ✅ 2026-03-11
+	- [x] Study Topology Practices ✅ 2026-03-11
 - [ ] Set Up DC1
-	- [ ] Create OUs
+	- [x] Create OUs ✅ 2026-03-12
 		- [ ] Define User Groups
-			- [ ] Define Users
+			- [x] Define Users ✅ 2026-03-12
 - [ ] Set Up File Server ⏫ 
 	- [ ] Role-based access permissions
 - [ ] Set Up Web Server ⏫ 
