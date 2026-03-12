@@ -102,4 +102,10 @@
 	- [ ] Public PCs
 		- [ ] DHCP
 	- [ ] DMZ
+- [ ] Roter config ⏫ 
+	- [ ] Firewall
+		- [ ] Rules between VLANs
+	- [ ] NAT
+- [ ] Automation 🔼 
+	- [ ] Monitoring tool
 - [ ] 
