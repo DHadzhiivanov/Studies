@@ -86,10 +86,20 @@
 	- [ ] Create OUs
 		- [ ] Define User Groups
 			- [ ] Define Users
-- [ ] Set Up File Server
-- [ ] Set Up Web Server
-- [ ] Set Up Web Config
+- [ ] Set Up File Server ⏫ 
+	- [ ] Role-based access permissions
+- [ ] Set Up Web Server ⏫ 
+	- [ ] Install dependencies
+	- [ ] HTTPS
+		- [ ] Self-signed cert
+- [ ] Set Up Web Config 🔼 
 	- [ ] Router
 	- [ ] Switch
-- [ ] Set Up VLANs
+- [ ] Set Up VLANs ⏫ 
+	- [ ] Staff
+		- [ ] DHCP
+	- [ ] Servers
+	- [ ] Public PCs
+		- [ ] DHCP
+	- [ ] DMZ
 - [ ] 

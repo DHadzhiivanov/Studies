@@ -107,15 +107,3 @@ Think of which research methods should be used for the sub-questions.
 Share with a colleague to receive and give feedback
 
 - Check if the story makes sense
-
-LO5, LO6
-
-# Personal Research Project
-
-Problem, Context, Questions, Plan to answer the research questions, Research pattern & strategy, answer the main question
-
-Should contain sources, references
-
-In text citations for references
-
-**APA** (wiki for definition)
