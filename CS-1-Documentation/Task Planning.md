@@ -94,7 +94,7 @@
 		- [ ] Self-signed cert
 - [ ] Set Up Web Config 🔼 
 	- [ ] Router
-	- [ ] Switch
+	- [x] Switch ✅ 2026-03-12
 - [ ] Set Up VLANs ⏫ 
 	- [ ] Staff
 		- [ ] DHCP
