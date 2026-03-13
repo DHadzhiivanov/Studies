@@ -124,6 +124,45 @@ Explanation of  how the research influenced my implementation.
 
 ---
 
+## Research Entry 2
+
+### Topic
+
+pfSense replacement
+
+### Reason for Research
+
+PfSense doesn't allow for configuration through the CLI, so im looking for a free alternative with similar capabilities and fully configurable through the CLI.
+
+The reason i don't want to use pfsense through the web interface as it is supposed to, is because it is extremely slow and hindering my productivity.
+
+### Research Sources
+
+| Type             | Source                                                                              | Description                                      |
+| ---------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------ |
+| Documentation    |                                                                                     |                                                  |
+| Website          | [Top 7 Software](https://cloudswit.ch/blogs/7-best-open-source-router-os-software/) | Comparison between the available router software |
+| Video / Tutorial |                                                                                     |                                                  |
+| Book / Article   |                                                                                     |                                                  |
+
+### Key Findings
+
+Summarize the most important information discovered during the research.
+
+-  
+-  
+-  
+
+### Application to the Project
+
+Explain how the research influenced your implementation.
+
+Example:
+- Used VLAN segmentation to separate staff, server, public, and DMZ networks
+- Implemented pfSense firewall rules between network zones
+
+---
+
 ---
 
 # 7. Conclusion
