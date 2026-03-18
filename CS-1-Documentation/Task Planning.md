@@ -92,16 +92,16 @@
 	- [ ] Install dependencies
 	- [ ] HTTPS
 		- [ ] Self-signed cert
-- [ ] Set Up Web Config 🔼 
-	- [ ] Router
+- [x] Set Up Web Config 🔼 ✅ 2026-03-18
+	- [x] Router ✅ 2026-03-18
 	- [x] Switch ✅ 2026-03-12
 - [ ] Set Up VLANs ⏫ 
-	- [ ] Staff
+	- [x] Staff ✅ 2026-03-18
 		- [ ] DHCP
-	- [ ] Servers
-	- [ ] Public PCs
+	- [x] Servers ✅ 2026-03-18
+	- [x] Public PCs ✅ 2026-03-18
 		- [ ] DHCP
-	- [ ] DMZ
+	- [x] DMZ ✅ 2026-03-18
 - [ ] Roter config ⏫ 
 	- [ ] Firewall
 		- [ ] Rules between VLANs
