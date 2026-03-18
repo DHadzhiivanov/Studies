@@ -103,8 +103,8 @@
 		- [x] DHCP ✅ 2026-03-18
 	- [x] DMZ ✅ 2026-03-18
 - [ ] Roter config ⏫ 
-	- [ ] Firewall
-		- [ ] Rules between VLANs
+	- [x] Firewall ✅ 2026-03-18
+		- [x] Rules between VLANs ✅ 2026-03-18
 	- [ ] NAT
 - [ ] Automation 🔼 
 	- [ ] Monitoring tool
