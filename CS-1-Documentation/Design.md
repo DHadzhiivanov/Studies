@@ -273,6 +273,43 @@ The network diagram illustrates the relationship between the router, switch, ser
 ---
 # Domain Controller
 
+## Active Directory Structure Design
+
+### Organizational Unit (OU) Structure
+
+The OU structure is designed to separate users and computers logically based on their role in the organization.
+
+knowledgeHub.local
+- KNOWLEDGEHUB
+	- Groups
+	- Servers
+	- Users
+		- IT
+			- K. Noorlander
+			- M. van Dijk
+			- T. Willems
+			- Y. Peters
+		- Management
+			- L. Jansen
+		- Operations
+			- Others
+
+---
+
+## Security Group Design
+
+Security groups are used to manage permissions efficiently instead of assigning permissions per user.
+
+### Groups
+
+| Group Name        | Members          | Purpose                            |
+| ----------------- | ---------------- | ---------------------------------- |
+| Operations_Group  | All staff users  | Basic access to shared resources   |
+| Management_Group  | Management users | Elevated access to sensitive files |
+| IT_Admins         | IT personnel     | Full administrative control        |
+| FileServer_Read   | IT_Group         | Read access to shared folders      |
+| FileServer_Modify | Management_Group | Modify access to sensitive data    |
+
 ---
 
 # File Server
