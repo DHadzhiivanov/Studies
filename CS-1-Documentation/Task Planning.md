@@ -95,12 +95,12 @@
 - [x] Set Up Web Config 🔼 ✅ 2026-03-18
 	- [x] Router ✅ 2026-03-18
 	- [x] Switch ✅ 2026-03-12
-- [ ] Set Up VLANs ⏫ 
+- [x] Set Up VLANs ⏫ ✅ 2026-03-18
 	- [x] Staff ✅ 2026-03-18
-		- [ ] DHCP
+		- [x] DHCP ✅ 2026-03-18
 	- [x] Servers ✅ 2026-03-18
 	- [x] Public PCs ✅ 2026-03-18
-		- [ ] DHCP
+		- [x] DHCP ✅ 2026-03-18
 	- [x] DMZ ✅ 2026-03-18
 - [ ] Roter config ⏫ 
 	- [ ] Firewall
