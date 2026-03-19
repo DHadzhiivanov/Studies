@@ -62,8 +62,6 @@ The main components of the network include:
 • Virtualized servers providing infrastructure services
 • Segmented networks for staff, servers, public users, and DMZ services
 
----
-
 ## 3.1 Access Layer
 
 The access layer consists of a managed switch that connects all end devices and servers.
@@ -75,8 +73,6 @@ Since the switch operates on Layer 2, it is responsible for:
 • Forwarding VLAN traffic to the firewall using a trunk link
 
 Ports on the switch are assigned to VLANs based on the type of device connected.
-
----
 
 ## 3.2 Core Layer (Firewall / Routing)
 
@@ -94,7 +90,15 @@ All VLAN gateways are situated on pfSense.
 
 ---
 
-# 4. VLAN and IP Design
+# 4. Network Diagram
+
+The network diagram illustrates the relationship between the router, switch, servers, and network segments.
+
+![](Network%20Diagram.svg)
+
+---
+
+# 5. VLAN and IP Design
 
 The network is segmented into multiple VLANs to separate different types of systems and users.
 
@@ -109,13 +113,11 @@ Each VLAN is assigned a dedicated subnet to improve security.
 
 ---
 
-# 5. Core Infrastructure Services
+# 6. Core Infrastructure Services
 
 The infrastructure provides several centralized services hosted on virtual machines.
 
----
-
-## 5.1 Active Directory Domain Controller
+## 6.1 Active Directory Domain Controller
 
 The Domain Controller provides centralized identity and authentication services.
 
@@ -131,9 +133,7 @@ Functions include:
 • Group policy management  
 • Centralized user administration
 
----
-
-## 5.2 File Server
+## 6.2 File Server
 
 The file server provides shared storage for library staff.
 
@@ -149,9 +149,7 @@ Functions include:
 • Role-based access control  
 • Support for collaboration between staff members
 
----
-
-## 5.3 Public Web Server
+## 6.3 Public Web Server
 
 A web server is hosted in the DMZ to provide public services while maintaining separation from the internal network.
 
@@ -165,7 +163,7 @@ Hosting public services in the DMZ ensures that internal systems remain protecte
 
 ---
 
-# 6. Routing Design
+# 7. Routing Design
 
 Routing between network segments is performed by the pfSense firewall.
 
@@ -180,13 +178,11 @@ This approach allows the firewall to inspect and control all inter-network traff
 
 ---
 
-# 7. Security Design
+# 8. Security Design
 
 Security is implemented through multiple layers including network segmentation and firewall rules.
 
----
-
-## 7.1 VLAN Segmentation
+## 8.1 VLAN Segmentation
 
 Network segmentation reduces the risk of unauthorized access between systems.
 
@@ -194,9 +190,7 @@ Network segmentation reduces the risk of unauthorized access between systems.
 • Staff systems can access shared resources
 • Public services are isolated in the DMZ
 
----
-
-## 7.2 DMZ Architecture
+## 8.2 DMZ Architecture
 
 The DMZ provides a dedicated network for public-facing services.
 
@@ -206,9 +200,7 @@ This ensures that:
 • Internal networks remain protected
 • Firewall rules control traffic between the DMZ and internal networks
 
----
-
-## 7.3 Firewall Rules
+## 8.3 Firewall Rules
 
 Firewall rules enforce security policies between networks.
 
@@ -224,7 +216,7 @@ Example policies include:
 
 ---
 
-# 8. Switch Port Allocation
+# 9. Switch Port Allocation
 
 The managed switch connects all infrastructure components and assigns devices to their respective VLANs. Port assignments are intentionally simplified in the simulation environment to reduce unnecessary complexity while still demonstrating the correct network design.
 
@@ -245,7 +237,7 @@ Although the real environment would contain more devices, the simulation environ
 
 ---
 
-# 9. Firewall Policy Table
+# 10. Firewall Policy Table
 
 The firewall is responsible for controlling communication between network segments. All traffic between VLANs is routed through the pfSense firewall where rules are applied to enforce security policies.
 
@@ -264,18 +256,9 @@ This firewall policy ensures that internal services remain protected while still
 
 ---
 
-# 10. Network Diagram
-
-The network diagram illustrates the relationship between the router, switch, servers, and network segments.
-
-![](Network%20Diagram.svg)
-
----
 # 11. Domain Controller
 
-## 11.1 Active Directory Structure Design
-
-### 11.1.1Organizational Unit (OU) Structure
+## 11.1 Organizational Unit Structure
 
 The OU structure is designed to separate users and computers logically based on their role in the organization.
 
@@ -305,15 +288,13 @@ knowledgehub.local
 			- I. Blom
 ~~~
 
----
-
-## Security Group Design
+## 11.2 Security Group Design
 
 Security groups are used to manage permissions efficiently instead of assigning permissions per user.
 
 The security groups will follow the [AGDLP model](https://artiste1.com/admin/active-directory/agdlp-model) for best practice approach and ease of management.
 
-### Groups
+### 11.2.1 Groups
 
 | Group Name        | Members                 | Purpose                            |
 | ----------------- | ----------------------- | ---------------------------------- |
