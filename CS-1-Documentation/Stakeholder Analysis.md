@@ -92,6 +92,8 @@ The successful implementation of the new IT infrastructure depends on understand
 | IT Support             | Manageable infrastructure, automation, monitoring | Complex maintenance, lack of tools           | Easier administration and troubleshooting |
 | Teachers and Assessors | Clear documentation, correct implementation       | Missing requirements, poor structure         | Demonstration of competencies             |
 
+---
+
 ## 3.3 Library Staff
 
 ### 3.3.1 Role and Perspective

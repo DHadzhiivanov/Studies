@@ -60,8 +60,6 @@ The first step of the project is identifying the technical and organizational re
 **Result:**
 Requirement Analysis document.
 
----
-
 ## 3.2 Phase 2 - Stakeholder Analysis
 
 In this phase the different stakeholders of the project are identified and their needs are analyzed.
@@ -74,8 +72,6 @@ In this phase the different stakeholders of the project are identified and their
 
 **Result:**
 Stakeholder Analysis document.
-
----
 
 ## 3.3 Phase 3 - Network Design
 
@@ -92,8 +88,6 @@ After defining the requirements, the network architecture is designed.
 **Result:**
 Design document.
 
----
-
 ## 3.4 Phase 4 - Implementation
 
 During the implementation phase, the designed network is built inside the simulation environment.
@@ -108,8 +102,6 @@ During the implementation phase, the designed network is built inside the simula
 **Result:**
 Working simulated network environment.
 
----
-
 ## 3.5 Phase 5 - Testing and Validation
 
 Once the network is implemented, testing is performed to verify correct functionality.
@@ -123,8 +115,6 @@ Once the network is implemented, testing is performed to verify correct function
 
 **Result:**
 Test results confirming correct operation.
-
----
 
 ## 3.6 Phase 6 - Documentation and Finalization
 
