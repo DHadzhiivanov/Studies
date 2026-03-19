@@ -82,10 +82,10 @@
 
 - [x] Set Topology ⏫ ✅ 2026-03-11
 	- [x] Study Topology Practices ✅ 2026-03-11
-- [ ] Set Up DC1
-	- [x] Create OUs ✅ 2026-03-12
-		- [ ] Define User Groups
-			- [x] Define Users ✅ 2026-03-12
+- [-] Set Up DC1 ⏫ ❌ 2026-03-19
+	- [-] Create OUs ❌ 2026-03-19
+		- [-] Define User Groups ❌ 2026-03-19
+			- [-] Define Users ❌ 2026-03-19
 - [ ] Set Up File Server ⏫ 
 	- [ ] Role-based access permissions
 - [ ] Set Up Web Server ⏫ 
@@ -108,4 +108,3 @@
 	- [ ] NAT
 - [ ] Automation 🔼 
 	- [ ] Monitoring tool
-- [ ] 
