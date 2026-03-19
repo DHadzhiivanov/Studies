@@ -32,6 +32,12 @@
         - [[#6.3.3 Research Sources|6.3.3 Research Sources]]
         - [[#6.3.4 Key Findings|6.3.4 Key Findings]]
         - [[#6.3.5 Application to the Project|6.3.5 Application to the Project]]
+    - [[#6.4 Research Entry 4|6.4 Research Entry 4]]
+        - [[#6.4.1 Topic|6.4.1 Topic]]
+        - [[#6.4.2 Reason for Research|6.4.2 Reason for Research]]
+        - [[#6.4.3 Research Sources|6.4.3 Research Sources]]
+        - [[#6.4.4 Key Findings|6.4.4 Key Findings]]
+        - [[#6.4.5 Application to the Project|6.4.5 Application to the Project]]
 - [[#7. Conclusion|7. Conclusion]]
 
 ---
@@ -200,6 +206,39 @@ Since Samba can be used on an Ubuntu machine, it is good to try and complete my 
 The good thing about this discovery is that scripting will become much easier since setting up Samba requires the use of the Linux CLI meaning that i dont need a desktop environment to use it. It is going to be a bit harder to get the gist of it when it comes to configuration but by following the guides made [here](https://didi-thesysadmin.com/2025/11/23/build-samba-active-directory-domain-controller-linux/) it will be pretty straight forward.
 
 ---
+## 6.4 Research Entry 4
+
+### 6.4.1 Topic
+
+Active Directory group nesting and permission management.
+
+### 6.4.2 Reason for Research
+
+I needed to design a structured and maintainable permission model for the file server at The Knowledge Hub, using Active Directory security groups to control access to shared folders based on staff roles.
+
+### 6.4.3 Research Sources
+
+| Type    | Source                                                                                   | Description                                                                                     |
+| ------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Website | [Artiste1](https://artiste1.com/admin/active-directory/agdlp-model)                      | Understanding and Implementing the AGDLP Model in Active Directory                              |
+| Website | [Wikipedia](https://en.wikipedia.org/wiki/AGDLP)                                         | Useful wiki but a bit short                                                                     |
+| Website | [ManageEngine](https://www.manageengine.com/products/ad-manager/blog/what-is-agdlp.html) | Advantages and disadvantages of using it along with best practices                              |
+| AI      | [Claude](https://claude.ai)                                                              | Used to explain the reasoning behind group nesting and how it applies to the file server design |
+
+### 6.4.4 Key Findings
+
+- AGDLP stands for Accounts; Global groups; Domain Local groups; Permissions. It is a Microsoft-recommended pattern for organizing AD permissions in a scalable and maintainable way.
+- Assigning permissions directly to user accounts creates management overhead - every staff change requires manual updates to folder permissions on the server itself.
+- Group nesting solves this by separating identity management from permission management. I manage who belongs to a group in one place; the permissions on the resource never need to change.
+- For a small organization like the Knowledge Hub, a simplified version of AGDLP is sufficient - Global security groups are assigned permissions directly, without Domain Local groups as an intermediate layer. This keeps the structure simple while retaining the core benefit of role-based access.
+
+### 6.4.5 Application to the Project
+
+- Created `IT_Admins`, `Management_Group`, and `Operations_Group` as Global security groups reflecting the three staff roles in the organization.
+- Created `FileServer_Read` and `FileServer_Modify` as permission-specific groups, containing the role groups rather than individual users.
+- This means staff changes only require updating one group membership - the file server permissions remain untouched regardless of who joins or leaves.
+
+This simplifies giving permissions and taking them away later on.
 
 ---
 
