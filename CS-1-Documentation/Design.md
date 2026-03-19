@@ -271,14 +271,15 @@ The network diagram illustrates the relationship between the router, switch, ser
 ![](Network%20Diagram.svg)
 
 ---
-# Domain Controller
+# 11. Domain Controller
 
-## Active Directory Structure Design
+## 11.1 Active Directory Structure Design
 
-### Organizational Unit (OU) Structure
+### 11.1.1Organizational Unit (OU) Structure
 
 The OU structure is designed to separate users and computers logically based on their role in the organization.
 
+~~~
 knowledgehub.local
 - KNOWLEDGEHUB
 	- Groups
@@ -302,6 +303,7 @@ knowledgehub.local
 			- A. Vermeulen
 			- P. Hendriks
 			- I. Blom
+~~~
 
 ---
 
