@@ -20,4 +20,4 @@ Func requirements separate from analysis
 
 research document for case study
 
-User default password - knowledgeHub26!
+User default password - knowledgeHub67!

@@ -292,7 +292,11 @@ knowledgeHub.local
 		- Management
 			- L. Jansen
 		- Operations
-			- Others
+			- F. Bakker
+			- S. Koenraadt
+			- A. Vermeulen
+			- P. Hendriks
+			- I. Blom
 
 ---
 
