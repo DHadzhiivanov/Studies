@@ -20,6 +20,18 @@
         - [[#6.1.3 Research Sources|6.1.3 Research Sources]]
         - [[#6.1.4 Key Findings|6.1.4 Key Findings]]
         - [[#6.1.5 Application to the Project|6.1.5 Application to the Project]]
+    - [[#6.2 Research Entry 2|6.2 Research Entry 2]]
+        - [[#6.2.1 Topic|6.2.1 Topic]]
+        - [[#6.2.2 Reason for Research|6.2.2 Reason for Research]]
+        - [[#6.2.3 Research Sources|6.2.3 Research Sources]]
+        - [[#6.2.4 Key Findings|6.2.4 Key Findings]]
+        - [[#6.2.5 Application to the Project|6.2.5 Application to the Project]]
+    - [[#6.3 Research Entry 3|6.3 Research Entry 3]]
+        - [[#6.3.1 Topic|6.3.1 Topic]]
+        - [[#6.3.2 Reason for Research|6.3.2 Reason for Research]]
+        - [[#6.3.3 Research Sources|6.3.3 Research Sources]]
+        - [[#6.3.4 Key Findings|6.3.4 Key Findings]]
+        - [[#6.3.5 Application to the Project|6.3.5 Application to the Project]]
 - [[#7. Conclusion|7. Conclusion]]
 
 ---
@@ -124,42 +136,68 @@ Explanation of  how the research influenced my implementation.
 
 ---
 
-## Research Entry 2
+## 6.2 Research Entry 2
 
-### Topic
+### 6.2.1 Topic
 
 pfSense replacement
 
-### Reason for Research
+### 6.2.2 Reason for Research
 
 PfSense doesn't allow for configuration through the CLI, so im looking for a free alternative with similar capabilities and fully configurable through the CLI.
 
 The reason i don't want to use pfsense through the web interface as it is supposed to, is because it is extremely slow and hindering my productivity.
 
-### Research Sources
+### 6.2.3 Research Sources
 
-| Type             | Source                                                                              | Description                                      |
-| ---------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------ |
-| Documentation    |                                                                                     |                                                  |
-| Website          | [Top 7 Software](https://cloudswit.ch/blogs/7-best-open-source-router-os-software/) | Comparison between the available router software |
-| Video / Tutorial |                                                                                     |                                                  |
-| Book / Article   |                                                                                     |                                                  |
+| Type          | Source                                                                              | Description                                                |
+| ------------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| Documentation | [VyOS Documentation](https://docs.vyos.io/en/latest/)                               | Read the documentation to see whether it will fit my needs |
+| Website       | [Top 7 Software](https://cloudswit.ch/blogs/7-best-open-source-router-os-software/) | Comparison between the available router software           |
 
-### Key Findings
 
-Summarize the most important information discovered during the research.
+### 6.2.4 Key Findings
 
--  
--  
--  
+-  I compared the top software that were recommended
+-  Decided to try VyOS and OPNsense
 
-### Application to the Project
+### 6.2.5 Application to the Project
 
-Explain how the research influenced your implementation.
+VyOS is a very extensive machine capable of configuration entirely through the CLI. The problem with it is that the documentation is a bit vague for my liking and it requires expertise to use which i don't have yet.
 
-Example:
-- Used VLAN segmentation to separate staff, server, public, and DMZ networks
-- Implemented pfSense firewall rules between network zones
+When it comes to OPNSense, i tried installing it in my environment but it just corrupted my volume on educloud leading to more problems so i decided to ditch it and just continue using pfSense as intended by the case study.
+
+---
+
+## 6.3 Research Entry 3
+
+### 6.3.1 Topic
+
+File server and AD DC implementation
+
+### 6.3.2 Reason for Research
+
+The windows virtual machine on GNS3 is broken and gets corrupted all the time whenever i implement some changes resetting my progress to 0 every time, so i need another way to implement the file server and domain controller so that i don't need a windows server VM as i intended to have in the first place.
+
+### 6.3.3 Research Sources
+
+| Type          | Source                                                                                                               | Description                                                         |
+| ------------- | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| Documentation | [Samba By Ubuntu](https://ubuntu.com/server/docs/how-to/samba/provision-samba-ad-controller/)                        | Guide on provisioning a Samba AD DC                                 |
+| Documentation | [Samba Official Wiki](https://wiki.samba.org/index.php/Setting_up_Samba_as_an_Active_Directory_Domain_Controller)    | Further documentation about Samba                                   |
+| Tutorial      | [Didi - The SysAdmin](https://didi-thesysadmin.com/2025/11/23/build-samba-active-directory-domain-controller-linux/) | Guide to Samba on Linux                                             |
+| AI            | [Claude](https://claude.ai)                                                                                          | Used to confirm the choice i will make along with additional advice |
+
+### 6.3.4 Key Findings
+
+-  Samba is used by default on windows server for AD DC and file sharing
+-  Samba can be used on an Ubuntu VM
+
+### 6.3.5 Application to the Project
+
+Since Samba can be used on an Ubuntu machine, it is good to try and complete my project tasks this way. 
+
+The good thing about this discovery is that scripting will become much easier since setting up Samba requires the use of the Linux CLI meaning that i dont need a desktop environment to use it. It is going to be a bit harder to get the gist of it when it comes to configuration but by following the guides made [here](https://didi-thesysadmin.com/2025/11/23/build-samba-active-directory-domain-controller-linux/) it will be pretty straight forward.
 
 ---
 
