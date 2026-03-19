@@ -279,9 +279,14 @@ The network diagram illustrates the relationship between the router, switch, ser
 
 The OU structure is designed to separate users and computers logically based on their role in the organization.
 
-knowledgeHub.local
+knowledgehub.local
 - KNOWLEDGEHUB
 	- Groups
+		- Staff_Group
+		- Management_Group
+		- IT_Admins
+		- fileServer_Read
+		- fileServer_Modify
 	- Servers
 	- Users
 		- IT
@@ -291,7 +296,7 @@ knowledgeHub.local
 			- Y. Peters
 		- Management
 			- L. Jansen
-		- Operations
+		- Staff
 			- F. Bakker
 			- S. Koenraadt
 			- A. Vermeulen
@@ -304,15 +309,17 @@ knowledgeHub.local
 
 Security groups are used to manage permissions efficiently instead of assigning permissions per user.
 
+The security groups will follow the [AGDLP model](https://artiste1.com/admin/active-directory/agdlp-model) for best practice approach and ease of management.
+
 ### Groups
 
-| Group Name        | Members          | Purpose                            |
-| ----------------- | ---------------- | ---------------------------------- |
-| Operations_Group  | All staff users  | Basic access to shared resources   |
-| Management_Group  | Management users | Elevated access to sensitive files |
-| IT_Admins         | IT personnel     | Full administrative control        |
-| FileServer_Read   | IT_Group         | Read access to shared folders      |
-| FileServer_Modify | Management_Group | Modify access to sensitive data    |
+| Group Name        | Members                 | Purpose                            |
+| ----------------- | ----------------------- | ---------------------------------- |
+| Staff_Group       | All staff users         | Basic access to shared resources   |
+| Management_Group  | Management users        | Elevated access to sensitive files |
+| IT_Admins         | IT personnel            | Full administrative control        |
+| FileServer_Read   | IT_Admins & Staff_Group | Read access to shared folders      |
+| FileServer_Modify | Management_Group        | Modify access to sensitive data    |
 
 ---
 
