@@ -13,3 +13,6 @@ Force automatic updates.
 
 ![[Pasted image 20260320194814.png]]
 The GPO only applies to staff and management users, not admins.
+
+![[Pasted image 20260320200458.png]]
+Drive maps set up. The example shows the Staff drive map with targeting so that only the selected security groups will be able to see it. On the IT drive map only GG_IT has been selected as a target so nobody else will see the drive on their end. This will reduce confusion and makes the environment cleaner.
