@@ -13,12 +13,13 @@
 	- [x] IP Plan ✅ 2026-03-20
 	- [x] Connectivity ✅ 2026-03-20
 - [x] Central Directory & Internal Network Services ⏫ ✅ 2026-03-20
-	- [ ] Windows Server VM
+	- [x] Windows Server VM ✅ 2026-03-20
 		- [x] AD DS ✅ 2026-03-20
-		- [ ] DNS
+		- [x] DNS ✅ 2026-03-20
 		- [x] OU Structure ✅ 2026-03-20
-- [ ] File Server & Monitoring Server ⏫ 
-	- [ ] Install and Join
+- [ ] File Server & Monitoring Server ⏫
+	- [x] Create file server ✅ 2026-03-20
+		- [x] Install and Join to AD ✅ 2026-03-20
 	- [ ] Install Linux Monitoring Server
 		- [ ] Necessary software
 		- [ ] Join to AD
@@ -30,7 +31,7 @@
 		- [ ] Allows the user to specify a list of system metrics
 		- [ ] Display all of the information the user entered in a well-formatted way
 		- [ ] Follow PEP8 coding style
-- [ ] Workstations and Standardization 🔼 
+- [ ] Workstations and Standardization 🔼
 	- [ ] 2 Win10 VMs
 		- [ ] Auto assignment of drive mappings to fileserver shares
 		- [ ] Disable RegEdit
