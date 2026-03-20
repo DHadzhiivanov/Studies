@@ -19,3 +19,6 @@ Drive maps set up. The example shows the Staff drive map with targeting so that 
 
 ![[Pasted image 20260320204319.png]]
 From the perspective of P. Hendriks, he is able to see the Staff share drive but not the other drives which do not relate to his department.
+
+![[Pasted image 20260320205135.png]]
+From the perspective of L. Jansen
