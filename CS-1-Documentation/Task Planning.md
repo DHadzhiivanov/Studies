@@ -82,29 +82,29 @@
 
 - [x] Set Topology ⏫ ✅ 2026-03-11
 	- [x] Study Topology Practices ✅ 2026-03-11
-- [ ] Set Up DC1 ⏫
-	- [ ] Create OUs
-		- [ ] Define User Groups
-			- [ ] Define Users
+- [x] Set Up DC1 ⏫ ✅ 2026-03-20
+	- [x] Create OUs ✅ 2026-03-20
+		- [x] Define User Groups ✅ 2026-03-20
+			- [x] Define Users ✅ 2026-03-20
 - [ ] Set Up File Server ⏫ 
 	- [ ] Role-based access permissions
 - [ ] Set Up Web Server ⏫ 
 	- [ ] Install dependencies
 	- [ ] HTTPS
 		- [ ] Self-signed cert
-- [ ] Set Up Web Config 🔼
-	- [ ] Router
-	- [ ] Switch
-- [ ] Set Up VLANs ⏫
-	- [ ] Staff
-		- [ ] DHCP
-	- [ ] Servers
-	- [ ] Public PCs
-		- [ ] DHCP
-	- [ ] DMZ
-- [ ] Roter config ⏫ 
-	- [ ] Firewall
-		- [ ] Rules between VLANs
+- [x] Set Up Web Config 🔼 ✅ 2026-03-20
+	- [x] Router ✅ 2026-03-20
+	- [x] Switch ✅ 2026-03-20
+- [x] Set Up VLANs ⏫ ✅ 2026-03-20
+	- [x] Staff ✅ 2026-03-20
+		- [x] DHCP ✅ 2026-03-20
+	- [x] Servers ✅ 2026-03-20
+	- [x] Public PCs ✅ 2026-03-20
+		- [x] DHCP ✅ 2026-03-20
+	- [x] DMZ ✅ 2026-03-20
+- [ ] Roter config ⏫
+	- [x] Firewall ✅ 2026-03-20
+		- [x] Rules between VLANs ✅ 2026-03-20
 	- [ ] NAT
 - [ ] Automation 🔼 
 	- [ ] Monitoring tool
