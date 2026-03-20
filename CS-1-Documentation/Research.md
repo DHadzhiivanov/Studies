@@ -71,6 +71,7 @@ How can a segmented and secure network be designed for a small library environme
 3. How can firewall policies protect internal systems from public users?
 4. How should servers be placed within the network to maintain security and accessibility?
 5. What is an efficient design for the library's needs?
+6. How will the necessary internal services be set up?
 
 ---
 
@@ -239,6 +240,76 @@ I needed to design a structured and maintainable permission model for the file s
 - This means staff changes only require updating one group membership - the file server permissions remain untouched regardless of who joins or leaves.
 
 This simplifies giving permissions and taking them away later on.
+
+---
+## 6.5 Research Entry 5
+
+### 6.5.1 Topic
+
+Active Directory Domain Controller setup and configuration.
+
+### 6.5.2 Reason for Research
+
+I needed to understand how to install and configure Active Directory Domain Services on Windows Server, including promoting the server to a domain controller, setting up DNS, and creating the OU and user structure for the Knowledge Hub.
+
+### 6.5.3 Research Sources
+
+|Type|Source|Description|
+|---|---|---|
+|Documentation|[Install Active Directory Domain Services - Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)|Official guide for installing AD DS on Windows Server through Server Manager|
+|Documentation|[AD DS Configuration Wizard - Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/ad-ds-installation-and-removal-wizard-page-descriptions)|Detailed walkthrough of every page in the promotion wizard and what each setting does|
+|Documentation|[Install and Configure DNS Server - Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/networking/dns/quickstart-install-configure-dns-server)|Guide for setting up DNS on Windows Server, including zones and forwarders|
+|AI|[Claude](https://claude.ai)|Used to understand specific steps during setup and troubleshoot issues that came up|
+
+### 6.5.4 Key Findings
+
+- AD DS is installed through Server Manager as a role, and the actual promotion to domain controller is a separate step done through the AD DS Configuration Wizard afterwards.
+- DNS is installed automatically alongside AD DS when promoting a new forest, and the DC automatically becomes the DNS server for the internal domain.
+- The DSRM password set during promotion is a critical recovery credential that is separate from the domain admin password. It is the only way to log in if AD becomes unavailable.
+- OUs are purely organizational containers and do not affect permissions by themselves. Their value comes from being able to apply different Group Policies and manage objects per department.
+
+### 6.5.5 Application to the Project
+
+- Installed the AD DS role through Server Manager and promoted DC1 to domain controller for knowledgeHub.local.
+- DNS was configured automatically during promotion. DC1 serves as the internal DNS server at 192.168.20.10.
+- Created the KNOWLEDGEHUB OU structure with sub-OUs for Groups, Servers, and Users, with IT, Management and Staff under Users to reflect the organizational hierarchy.
+- All user accounts were created in their respective department OUs.
+
+---
+
+## 6.6 Research Entry 6
+
+### 6.6.1 Topic
+
+Windows file server setup, SMB shares and NTFS permissions.
+
+### 6.6.2 Reason for Research
+
+I needed to understand how to set up a Windows file server, create shared folders, and configure permissions correctly using both the share layer and the NTFS layer so that access is controlled based on AD group membership.
+
+### 6.6.3 Research Sources
+
+|Type|Source|Description|
+|---|---|---|
+|Documentation|[Managing Permissions for Shared Folders - Microsoft Learn](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753731\(v=ws.11\))|Explains how share permissions and NTFS permissions interact and how access-based enumeration works|
+|Documentation|[12 Steps to NTFS Shared Folders in Windows Server 2012 - Microsoft Learn](https://learn.microsoft.com/en-us/archive/blogs/keithmayer/12-steps-to-ntfs-shared-folders-in-windows-server-2012)|Practical walkthrough of creating shares and setting NTFS permissions through Server Manager|
+|Documentation|[Share and NTFS Permissions - Microsoft Learn](https://learn.microsoft.com/en-us/iis/web-hosting/configuring-servers-in-the-windows-web-platform/configuring-share-and-ntfs-permissions)|Reference for understanding both permission layers and how to configure them|
+|AI|[Claude](https://claude.ai)|Used to understand the two permission layers and the reasoning behind best practices|
+
+### 6.6.4 Key Findings
+
+- Windows file shares have two separate permission layers. Share permissions act as the first gate for network access. NTFS permissions control what users can actually do with files once they are through the share.
+- Both layers apply simultaneously and the most restrictive one wins. If share permissions say Read but NTFS says Modify, the user gets Read.
+- Best practice is to set share permissions to Full Control for the relevant group and use NTFS permissions to define the actual access level. This way NTFS is the single source of truth and you do not have to maintain two sets of permissions.
+- Access-based enumeration hides shares and folders from users who do not have Read permission. This prevents users from seeing resources that are not relevant to them.
+- Disabling inheritance on a folder and converting to explicit permissions is important when you want to assign custom permissions per group without inheriting unwanted defaults from the parent folder.
+
+### 6.6.5 Application to the Project
+
+- Installed the File Server and File Server Resource Manager roles on FILESERVER through Server Manager.
+- Created three shares: Staff, Management and IT, each with their own NTFS permissions assigned to the corresponding Domain Local group.
+- Set share permissions to Full Control for each Domain Local group and used NTFS permissions to set the actual access level per share.
+- Enabled access-based enumeration on all shares so users only see the drives they have access to, keeping the environment clean and avoiding confusion.
 
 ---
 
