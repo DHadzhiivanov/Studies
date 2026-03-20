@@ -266,9 +266,9 @@ The OU structure is designed to separate users and computers logically based on 
 knowledgehub.local
 - KNOWLEDGEHUB
 	- Groups
-		- Staff_Group
-		- Management_Group
-		- IT_Admins
+		- GG_Staff
+		- GG_Management
+		- GG_IT
 		- fileServer_Read
 		- fileServer_Modify
 	- Servers
@@ -296,13 +296,13 @@ The security groups will follow the [AGDLP model](https://artiste1.com/admin/act
 
 ### 11.2.1 Groups
 
-| Group Name        | Members                 | Purpose                            |
-| ----------------- | ----------------------- | ---------------------------------- |
-| Staff_Group       | All staff users         | Basic access to shared resources   |
-| Management_Group  | Management users        | Elevated access to sensitive files |
-| IT_Admins         | IT personnel            | Full administrative control        |
-| FileServer_Read   | IT_Admins & Staff_Group | Read access to shared folders      |
-| FileServer_Modify | Management_Group        | Modify access to sensitive data    |
+| Group Name        | Members          | Purpose                            |
+| ----------------- | ---------------- | ---------------------------------- |
+| GG_Staff          | All staff users  | Basic access to shared resources   |
+| GG_Management     | Management users | Elevated access to sensitive files |
+| GG_IT             | IT personnel     | Full administrative control        |
+| FileServer_Read   | GG_IT & GG_Staff | Read access to shared folders      |
+| FileServer_Modify | GG_Management    | Modify access to sensitive data    |
 
 ---
 
