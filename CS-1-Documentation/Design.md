@@ -302,13 +302,17 @@ The security groups will follow the [AGDLP model](https://artiste1.com/admin/act
 
 ### 11.2.1 Groups
 
-| Group Name        | Members          | Purpose                            |
-| ----------------- | ---------------- | ---------------------------------- |
-| GG_Staff          | All staff users  | Basic access to shared resources   |
-| GG_Management     | Management users | Elevated access to sensitive files |
-| GG_IT             | IT personnel     | Full administrative control        |
-| FileServer_Read   | GG_IT & GG_Staff | Read access to shared folders      |
-| FileServer_Modify | GG_Management    | Modify access to sensitive data    |
+| Group Name       | Members                  | Purpose                            |
+| ---------------- | ------------------------ | ---------------------------------- |
+| GG_Staff         | All staff users          | Basic access to shared resources   |
+| GG_Management    | Management users         | Elevated access to sensitive files |
+| GG_IT            | IT personnel             | Full administrative control        |
+| DL_Staff_R       | GG_Staff                 | Read access to shared folders      |
+| DL_Staff_RW      | GG_Staff & GG_Management | Modify access to sensitive data    |
+| DL_IT_R          | GG_IT                    | Read access to shared folders      |
+| DL_IT_RW         | GG_IT & GG_Management    | Modify access to sensitive data    |
+| DL_Management_R  | GG_Management            | Read access to shared folders      |
+| DL_Management_RW | GG_Management            | Modify access to sensitive data    |
 
 ---
 
@@ -325,9 +329,15 @@ The security groups will follow the [AGDLP model](https://artiste1.com/admin/act
 
 ## 12.2 Share Permissions
 
-| Share | Group           | Permissions |
-| ----- | --------------- | ----------- |
-| Staff | DL_fileServer_R |             |
+| Share      | Group            | Permissions                  |
+| ---------- | ---------------- | ---------------------------- |
+| Staff      | DL_Staff_RW      | Modify; Read; Write; Execute |
+| Staff      | DL_Management_RW | Full Control                 |
+| Staff      | DL_IT_RW         | Modify; Read; Write; Execute |
+| Management | DL_Management_RW | Full Control                 |
+| IT         | DL_IT_RW         | Modify; Read; Write; Execute |
+| IT         | DL_Management_RW | Full Control                 |
+| IT         | DL_Staff_R       | Read; Execute                |
 
 ---
 
