@@ -312,7 +312,22 @@ The security groups will follow the [AGDLP model](https://artiste1.com/admin/act
 
 ---
 
-# File Server
+# 12. File Server
+
+## 12.1 Share Structure
+
+~~~
+- Shares
+	- Staff
+	- Management
+	- IT
+~~~
+
+## 12.2 Share Permissions
+
+| Share | Group           | Permissions |
+| ----- | --------------- | ----------- |
+| Staff | DL_fileServer_R |             |
 
 ---
 
