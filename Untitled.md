@@ -10,18 +10,21 @@ This learning outcome is about building infrastructure that actually works end t
 
 For CS1 I designed and implemented a segmented network for the Knowledge Hub library including VLAN separation, inter-VLAN routing through pfSense, a Windows Server Domain Controller with Active Directory, DNS, OUs and users, a file server with SMB shares, and two domain-joined workstations with GPO-based standardization.
 
-### Evaluation & Reflection
+### Case Study 1
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| #### **Case Study 1**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Current level: *Beginning/Proficient*                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| The core infrastructure is designed and implemented. The network, DC, file server, and workstations are all working and validated with evidence. I used research to back my decisions, particularly for the network topology and AD configuration. I would place myself between Beginning and Proficient because the implemented components are solid but a significant part of the design is still pending, specifically the web server, external DNS, monitoring server, and NAT configuration.                                                                                                                             |
-| The evidence for this LO is spread across several documents. @Design covers the full architecture and shows how I translated requirements into a technical plan. @Implementation documents what was actually built and the reasoning behind decisions. @Validation provides the test results and screenshots proving it works. @Research Doc entries 1, 5, and 6 show the research that informed the topology, AD DS setup, and file server configuration. @Requirements Analysis connects each technical component back to an organizational requirement. @Show & Grow Technical shows I presented this work to an audience. |
-| Next Steps                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| Complete the web server, external DNS, monitoring server, and NAT configuration. These are the missing components that will fully round out the LO1 evidence. Add validation entries for each once they are implemented.                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Reflection                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| The biggest challenge was the DC breaking multiple times. Each time it happened I had to diagnose what went wrong and figure out how to recover or rebuild. That was frustrating but it taught me more about how AD actually works than following a guide would have. I also learned that small configuration details like pointing DNS to the DC before joining the domain matter a lot and the only way to understand why is to see what breaks when you get it wrong.                                                                                                                                                      |
+Current level: Beginning
+
+I would place myself at Beginning because the implemented components are solid but a significant part of the design is still pending, specifically the web server, external DNS, monitoring server, and NAT configuration. The network, DC, file server, and workstations are all working and validated with evidence. I used research to back my decisions, particularly for the network topology and AD configuration.
+
+The evidence for this LO is spread across several documents. @Design covers the full architecture and shows how I translated requirements into a technical plan. @Implementation documents what was actually built and the reasoning behind decisions. @Validation provides the test results and screenshots proving it works. @Research Doc entries 1, 5, and 6 show the research that informed the topology, AD DS setup, and file server configuration. @Requirements Analysis connects each technical component back to an organizational requirement. @Show & Grow Technical shows I presented this work to an audience.
+
+#### Next Steps
+
+Complete the web server, external DNS, monitoring server, and NAT configuration. These are the missing components that will fully round out the LO1 evidence. Add validation entries for each once they are implemented.
+
+#### Reflection
+
+The biggest challenge was the DC breaking multiple times. Each time it happened I had to diagnose what went wrong and figure out how to recover or rebuild. That was frustrating but it taught me more about how AD actually works than following a guide would have. I also learned that small configuration details like pointing DNS to the DC before joining the domain matter a lot and the only way to understand why is to see what breaks when you get it wrong.
 
 ### Evidence Overview
 
@@ -42,18 +45,21 @@ Security for me means making sure access is controlled, traffic is filtered, and
 
 For CS1 I implemented VLAN segmentation to separate staff, servers, public computers, and the DMZ. Firewall rules on pfSense enforce which traffic can flow between segments. The file server uses NTFS permissions tied to AD security groups following the AGDLP model. GPO disables registry editing for staff users and excludes admin accounts from the policy.
 
-### Evaluation & Reflection
+### Case Study 1
 
-| |
-|---|
-| #### **Case Study 1** |
-| Current level: *Beginning/Proficient* |
-| The security design covers multiple layers and the implemented parts are working and validated. VLAN segmentation, firewall rules, NTFS permissions, and GPO security settings are all evidenced. The gap is that the DMZ and web server are not yet implemented which means the public-facing security layer is still missing. NAT is also outstanding. This puts me at the same level as LO1 — solid foundation but incomplete. |
-| @Design sections 8 and 10 show the security design including VLAN segmentation, DMZ architecture, and the full firewall policy table. @Implementation sections 2.4, 3.4, 4.4, and 5.2 through 5.4 cover firewall rules, AGDLP groups, NTFS permissions, and GPO security settings. @Validation sections 5.2, 5.4, and 6.3 provide evidence that these security measures work correctly. @Research Doc entry 4 covers the AGDLP research. @Requirements Analysis REQ-S2P1-02, 04, and 05 are the relevant requirements. |
-| Next Steps |
-| Implement the web server in the DMZ and configure NAT on pfSense. These are the missing security components. Also complete OS-level firewall hardening on all VMs as required by Task 9. |
-| Reflection |
-| Designing the permission model was the most interesting part of this LO. Before this project I knew permissions existed but I did not understand the reasoning behind using groups instead of assigning permissions directly to users. Researching AGDLP and then actually implementing it made the logic click. The practical test of logging in as different users and seeing the correct access behavior was a good confirmation that the design was right. |
+Current level: Beginning
+
+The security design covers multiple layers and the implemented parts are working and validated. VLAN segmentation, firewall rules, NTFS permissions, and GPO security settings are all evidenced. The gap is that the DMZ and web server are not yet implemented which means the public-facing security layer is still missing. NAT is also outstanding.
+
+@Design sections 8 and 10 show the security design including VLAN segmentation, DMZ architecture, and the full firewall policy table. @Implementation sections 2.4, 3.4, 4.4, and 5.2 through 5.4 cover firewall rules, AGDLP groups, NTFS permissions, and GPO security settings. @Validation sections 5.2, 5.4, and 6.3 provide evidence that these security measures work correctly. @Research Doc entry 4 covers the AGDLP research. @Requirements Analysis REQ-S2P1-02, 04, and 05 are the relevant requirements.
+
+#### Next Steps
+
+Implement the web server in the DMZ and configure NAT on pfSense. Also complete OS-level firewall hardening on all VMs as required by Task 9.
+
+#### Reflection
+
+Designing the permission model was the most interesting part of this LO. Before this project I knew permissions existed but I did not understand the reasoning behind using groups instead of assigning permissions directly to users. Researching AGDLP and then actually implementing it made the logic click. The practical test of logging in as different users and seeing the correct access behavior was a good confirmation that the design was right.
 
 ### Evidence Overview
 
@@ -73,17 +79,19 @@ Automation means reducing manual work through scripting. In the context of this 
 
 For CS1 this is the area where I have the least progress. The Python scripting tasks have not been started yet. The plan is to build a monitoring script in three stages matching Tasks 5, 10, and 11.
 
-### Evaluation & Reflection
+### Case Study 1
 
-| |
-|---|
-| #### **Case Study 1** |
-| Current level: *Orienting* |
-| No implementation has been done for this LO yet. I have a clear plan for what needs to be built but no evidence to show. This is the highest priority for the next working session. |
-| Next Steps |
-| Start with Task 5 — write a basic Python script that takes hostname, IP, and metric inputs and displays them formatted. Then build on that for Task 10 by adding psutil measurements, disk storage with timestamps, and CLI modes. Then upgrade to SQLite storage for Task 11. Set up a GitLab repository for version control. |
-| Reflection |
-| Not started yet so there is nothing meaningful to reflect on. This section will be updated once the scripting tasks are completed. |
+Current level: Orienting
+
+No implementation has been done for this LO yet. I have a clear plan for what needs to be built but no evidence to show at this point.
+
+#### Next Steps
+
+Start with Task 5 — write a basic Python script that takes hostname, IP, and metric inputs and displays them formatted. Then build on that for Task 10 by adding psutil measurements, disk storage with timestamps, and CLI modes. Then upgrade to SQLite storage for Task 11. Set up a GitLab repository for version control.
+
+#### Reflection
+
+Not started yet so there is nothing meaningful to reflect on. This section will be updated once the scripting tasks are completed.
 
 ### Evidence Overview
 
@@ -99,25 +107,28 @@ This LO is about thinking beyond the technical build and considering how the inf
 
 For CS1 I completed a full project analysis, stakeholder analysis, and requirements analysis. I also presented the project context in the professional Show and Grow session. The ITIL process design covering incident and change management is still pending.
 
-### Evaluation & Reflection
+### Case Study 1
 
-| |
-|---|
-| #### **Case Study 1** |
-| Current level: *Beginning* |
-| The analysis and planning documents are complete and well-structured. They show I can identify stakeholders, analyze risks, prioritize requirements, and frame infrastructure decisions in an organizational context. The missing piece is the ITIL process design which is a direct requirement for this LO. Until that is done the management process side of LO4 is not fully evidenced. |
-| @Stakeholder Analysis covers stakeholder identification, power-interest matrix, communication plan, and risk assessment per group. @Project Analysis includes the health check, MoSCoW prioritization, risk analysis, and value scorecard. @Requirements Analysis maps organizational requirements to technical solutions including management and monitoring requirements REQ-S2P1-07, 08, and 09. @Show & Grow Professional demonstrates professional communication of the project context and design rationale. |
-| Next Steps |
-| Complete the ITIL process design covering incident management flow and change management flow. Link both back to the stakeholder analysis as required by Task 12. |
-| Reflection |
-| The stakeholder analysis was useful for making me think about who the infrastructure actually serves and why. It changed how I framed some design decisions. For example the public VLAN isolation is not just a technical choice — it directly addresses the visitor stakeholder group's privacy and security concerns. Making those connections explicitly in the documentation made the reasoning behind technical decisions clearer. |
+Current level: Beginning
+
+The analysis and planning documents are complete and well-structured. They show I can identify stakeholders, analyze risks, prioritize requirements, and frame infrastructure decisions in an organizational context. The missing piece is the ITIL process design which is a direct requirement for this LO.
+
+@Stakeholder Analysis covers stakeholder identification, power-interest matrix, communication plan, and risk assessment per group. @Project Analysis includes the health check, MoSCoW prioritization, risk analysis, and value scorecard. @Requirements Analysis maps organizational requirements to technical solutions including management and monitoring requirements REQ-S2P1-07, 08, and 09. @Show & Grow Professional demonstrates professional communication of the project context and design rationale.
+
+#### Next Steps
+
+Complete the ITIL process design covering incident management flow and change management flow. Link both back to the stakeholder analysis as required by Task 12.
+
+#### Reflection
+
+The stakeholder analysis was useful for making me think about who the infrastructure actually serves and why. It changed how I framed some design decisions. For example the public VLAN isolation is not just a technical choice — it directly addresses the visitor stakeholder group's privacy and security concerns. Making those connections explicitly in the documentation made the reasoning behind technical decisions clearer.
 
 ### Evidence Overview
 
 - @Stakeholder Analysis: Full stakeholder identification, power-interest matrix, communication plan, and risk assessment.
 - @Requirements Analysis: REQ-S2P1-07, 08, and 09 cover monitoring, automation, and management process requirements.
 - @Project Analysis: Health check, MoSCoW prioritization, risk analysis, cost considerations, and value scorecard.
-- @Show & Grow Professional: Presentation covering the what, why, and how of the project from a professional perspective including research methods and design rationale.
+- @Show & Grow Professional: Presentation covering the what, why, and how of the project from a professional perspective.
 
 ---
 
@@ -129,18 +140,21 @@ Being professional means organizing yourself, doing proper research before makin
 
 For CS1 I followed a structured phased workflow, maintained a research log throughout the project, kept consistent documentation across all documents, tracked all tasks in a planning document, and presented progress in two Show and Grow sessions.
 
-### Evaluation & Reflection
+### Case Study 1
 
-| |
-|---|
-| #### **Case Study 1** |
-| Current level: *Beginning/Proficient* |
-| The documentation quality and research approach are the strongest parts of this LO. Every major technical decision has a corresponding research entry and the documents follow a consistent professional structure. The areas that still need work are completing the remaining documents and filling in the reflection sections properly at the end of the project. |
-| @Research Doc shows structured use of research throughout the project with six entries covering all major technical decisions. @Project Planning defines the phased workflow and task management approach. @Task Planning shows continuous task tracking throughout the project. @Requirements Analysis and @Stakeholder Analysis demonstrate structured professional analysis. @Show & Grow Professional and @Show & Grow Technical show professional communication of project progress. @Workshop GEN AI and @Workshop DOT Framework show participation in professional development workshops. |
-| Next Steps |
-| Complete all pending documentation sections. Finalize the reflection sections in the learning goals. Ensure all evidence has proper descriptions in the portfolio. |
-| Reflection |
-| Keeping a research log during the project was more useful than I expected. It forced me to articulate why I was making certain choices instead of just doing things. It also made the documentation process easier because the reasoning was already written down when I needed it. The Show and Grow sessions were a good reminder that communicating technical work to others requires a different way of thinking than just building it. |
+Current level: Beginning
+
+The documentation quality and research approach are the strongest parts of this LO. Every major technical decision has a corresponding research entry and the documents follow a consistent professional structure. The areas that still need work are completing the remaining documents and filling in the reflection sections at the end of the project.
+
+@Research Doc shows structured use of research throughout the project with six entries covering all major technical decisions. @Project Planning defines the phased workflow and task management approach. @Task Planning shows continuous task tracking throughout the project. @Requirements Analysis and @Stakeholder Analysis demonstrate structured professional analysis. @Show & Grow Professional and @Show & Grow Technical show professional communication of project progress. @Workshop GEN AI and @Workshop DOT Framework show participation in professional development workshops.
+
+#### Next Steps
+
+Complete all pending documentation sections. Finalize the reflection sections in the learning goals. Ensure all evidence has proper descriptions in the portfolio.
+
+#### Reflection
+
+Keeping a research log during the project was more useful than I expected. It forced me to articulate why I was making certain choices instead of just doing things. It also made the documentation process easier because the reasoning was already written down when I needed it. The Show and Grow sessions were a good reminder that communicating technical work to others requires a different way of thinking than just building it.
 
 ### Evidence Overview
 
@@ -148,7 +162,7 @@ For CS1 I followed a structured phased workflow, maintained a research log throu
 - @Project Planning: Phased workflow from requirement analysis to finalization with defined activities and outputs per phase.
 - @Workshop GEN AI: Workshop participation showing professional development and reflection on AI tools in an IT context.
 - @Workshop DOT Framework: Workshop participation showing structured research methodology.
-- @Task Planning: Continuous task tracking throughout the project showing organized professional workflow.
+- @Task Planning: Continuous self-managed task tracking showing organized professional workflow.
 - @Requirements Analysis: Structured professional analysis connecting organizational needs to technical solutions.
 - @Project Analysis: Professional project analysis using standard methods including MoSCoW and risk assessment.
 - @Stakeholder Analysis: Structured stakeholder identification, power matrix, communication plan and risk assessment.
@@ -165,18 +179,21 @@ Personal leadership means owning your own learning. Not waiting for someone to t
 
 For CS1 I set concrete learning goals at the start of the semester, ran into serious problems during implementation, researched solutions independently, adapted my approach multiple times, and documented the process honestly.
 
-### Evaluation & Reflection
+### Case Study 1
 
-| |
-|---|
-| #### **Case Study 1** |
-| Current level: *Beginning* |
-| I showed initiative when things broke. The DC failing multiple times could have been a stopping point but instead I researched recovery options, tried alternatives like Samba, and eventually rebuilt and moved forward. Research entries 2 and 3 specifically document this process. The honest gap is that the reflection sections in the learning goals document are not yet written and the TalentScan assessment is still early stage. The full picture of personal development will only be visible once those are completed. |
-| @Semester Learning Goals shows five concrete goals set at the start of the semester with measurable success criteria and reflection sections ready to be filled in. @Research Doc entries 2 and 3 specifically show personal initiative — I identified problems, researched alternatives, tried them, and adapted based on what worked. @Project Planning shows structured self-organization throughout the project. @Workshop DOT Framework and @Task Planning show continued professional engagement and self-management. |
-| Next Steps |
-| Fill in the reflection sections in the Semester Learning Goals document at the end of the semester. Complete the TalentScan assessment and use it to identify development priorities. Seek teacher feedback on the current portfolio and use it to improve. |
-| Reflection |
-| The moments where things went wrong were the most valuable learning experiences of CS1. The DC breaking taught me more about AD than a smooth implementation would have. Researching pfSense alternatives and Samba taught me about the broader landscape of tools even though I did not end up using them. I think the willingness to try things and accept that they might not work is something I want to carry forward into future case studies. |
+Current level: Beginning
+
+I showed initiative when things broke. The DC failing multiple times could have been a stopping point but instead I researched recovery options, tried alternatives like Samba, and eventually rebuilt and moved forward. Research entries 2 and 3 specifically document this process. The honest gap is that the reflection sections in the learning goals document are not yet written and the full picture of personal development will only be visible once those are completed.
+
+@Semester Learning Goals shows five concrete goals set at the start of the semester with measurable success criteria. @Research Doc entries 2 and 3 specifically show personal initiative — I identified problems, researched alternatives, tried them, and adapted based on what worked. @Project Planning shows structured self-organization throughout the project. @Workshop DOT Framework and @Task Planning show continued professional engagement and self-management.
+
+#### Next Steps
+
+Fill in the reflection sections in the Semester Learning Goals document at the end of the semester. Seek teacher feedback on the current portfolio and use it to improve.
+
+#### Reflection
+
+The moments where things went wrong were the most valuable learning experiences of CS1. The DC breaking taught me more about AD than a smooth implementation would have. Researching pfSense alternatives and Samba taught me about the broader landscape of tools even though I did not end up using them. The willingness to try things and accept that they might not work is something I want to carry forward into future case studies.
 
 ### Evidence Overview
 
