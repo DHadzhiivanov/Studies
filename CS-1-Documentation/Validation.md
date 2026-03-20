@@ -4,6 +4,39 @@
 
 ---
 
+# Table of Contents
+
+- [[#1. Introduction|1. Introduction]]
+- [[#2. Validation Status Overview|2. Validation Status Overview]]
+- [[#3. Domain Controller|3. Domain Controller]]
+    - [[#3.1 Test Details|3.1 Test Details]]
+    - [[#3.2 OU Structure|3.2 OU Structure]]
+    - [[#3.3 User Accounts|3.3 User Accounts]]
+    - [[#3.4 Security Groups|3.4 Security Groups]]
+- [[#4. File Server|4. File Server]]
+    - [[#4.1 Test Details|4.1 Test Details]]
+    - [[#4.2 Domain Join|4.2 Domain Join]]
+    - [[#4.3 Share Configuration|4.3 Share Configuration]]
+    - [[#4.4 Access Testing|4.4 Access Testing]]
+- [[#5. Workstations and Group Policy|5. Workstations and Group Policy]]
+    - [[#5.1 Test Details|5.1 Test Details]]
+    - [[#5.2 RegEdit Disabled|5.2 RegEdit Disabled]]
+    - [[#5.3 Automatic Updates|5.3 Automatic Updates]]
+    - [[#5.4 Admin Account Exclusion|5.4 Admin Account Exclusion]]
+    - [[#5.5 Drive Mappings|5.5 Drive Mappings]]
+- [[#6. Network Foundation|6. Network Foundation]]
+    - [[#6.1 VLAN Configuration|6.1 VLAN Configuration]]
+    - [[#6.2 DHCP|6.2 DHCP]]
+    - [[#6.3 Firewall Rules|6.3 Firewall Rules]]
+- [[#7. Pending Validation|7. Pending Validation]]
+    - [[#7.1 Linux Monitoring Server|7.1 Linux Monitoring Server]]
+    - [[#7.2 Web Server|7.2 Web Server]]
+    - [[#7.3 External DNS Server|7.3 External DNS Server]]
+    - [[#7.4 NAT and Security Hardening|7.4 NAT and Security Hardening]]
+    - [[#7.5 Python Monitoring Script|7.5 Python Monitoring Script]]
+
+---
+
 # 1. Introduction
 
 This document records the validation and testing results for the IT infrastructure implemented for The Knowledge Hub library. Each section covers a specific component, describing what was tested, the expected outcome, the actual result, and evidence in the form of screenshots or recordings.
@@ -233,9 +266,10 @@ Access was validated through a recorded demonstration from the perspective of L.
 | VLAN 40 | DMZ | 192.168.40.0/24 | 192.168.40.1 |
 
 ![[Pasted image 20260320220411.png]]
+*VLANS on Switch*
 
 ![[Pasted image 20260320220441.png]]
-
+*VLANS on pfSense - OPT2 (VLAN10) etc.*
 
 ## 6.2 DHCP
 
