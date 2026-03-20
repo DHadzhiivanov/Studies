@@ -229,7 +229,9 @@ Access was validated through a recorded demonstration from the perspective of L.
 | VLAN 30 | Public Computers | 192.168.30.0/24 | 192.168.30.1 |
 | VLAN 40 | DMZ | 192.168.40.0/24 | 192.168.40.1 |
 
-![[network-vlans.png]]
+![[Pasted image 20260320220411.png]
+![[Pasted image 20260320220441.png]]
+
 
 ## 6.2 DHCP
 
@@ -239,7 +241,8 @@ Access was validated through a recorded demonstration from the perspective of L.
 
 **Result:** Pass
 
-![[network-dhcp.png]]
+![[Pasted image 20260320220624.png]]
+![[Pasted image 20260320220846.png]]
 
 ## 6.3 Firewall Rules
 
