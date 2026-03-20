@@ -35,8 +35,8 @@
 	- [ ] 2 Win10 VMs
 		- [ ] Auto assignment of drive mappings to fileserver shares
 		- [x] Disable RegEdit ✅ 2026-03-20
-		- [ ] Auto force updates
-		- [ ] Exclude Admin Accounts
+		- [x] Auto force updates ✅ 2026-03-20
+		- [x] Exclude Admin Accounts ✅ 2026-03-20
 - [ ] Web Server Installation & Configuration ⏫ 
 	- [ ] Install Linux VM
 		- [ ] Install Apache or Nginx
