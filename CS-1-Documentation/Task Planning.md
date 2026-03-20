@@ -31,9 +31,9 @@
 		- [ ] Allows the user to specify a list of system metrics
 		- [ ] Display all of the information the user entered in a well-formatted way
 		- [ ] Follow PEP8 coding style
-- [ ] Workstations and Standardization 🔼
-	- [ ] 2 Win10 VMs
-		- [ ] Auto assignment of drive mappings to fileserver shares
+- [x] Workstations and Standardization 🔼 ✅ 2026-03-20
+	- [x] 2 Win10 VMs ✅ 2026-03-20
+		- [x] Auto assignment of drive mappings to fileserver shares ✅ 2026-03-20
 		- [x] Disable RegEdit ✅ 2026-03-20
 		- [x] Auto force updates ✅ 2026-03-20
 		- [x] Exclude Admin Accounts ✅ 2026-03-20
