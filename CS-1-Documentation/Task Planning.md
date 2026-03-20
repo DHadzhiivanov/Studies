@@ -34,7 +34,7 @@
 - [ ] Workstations and Standardization 🔼
 	- [ ] 2 Win10 VMs
 		- [ ] Auto assignment of drive mappings to fileserver shares
-		- [ ] Disable RegEdit
+		- [x] Disable RegEdit ✅ 2026-03-20
 		- [ ] Auto force updates
 		- [ ] Exclude Admin Accounts
 - [ ] Web Server Installation & Configuration ⏫ 
