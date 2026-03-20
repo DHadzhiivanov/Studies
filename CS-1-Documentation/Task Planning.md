@@ -86,8 +86,8 @@
 	- [x] Create OUs ✅ 2026-03-20
 		- [x] Define User Groups ✅ 2026-03-20
 			- [x] Define Users ✅ 2026-03-20
-- [ ] Set Up File Server ⏫ 
-	- [ ] Role-based access permissions
+- [x] Set Up File Server ⏫ ✅ 2026-03-20
+	- [x] Role-based access permissions ✅ 2026-03-20
 - [ ] Set Up Web Server ⏫ 
 	- [ ] Install dependencies
 	- [ ] HTTPS
