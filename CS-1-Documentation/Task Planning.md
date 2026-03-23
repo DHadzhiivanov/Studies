@@ -50,7 +50,7 @@
 		- [ ] Create an A-record in this public zone (e.g. "library") pointing to the _public_ IP address (from step 2) assigned for external webserver access.
 		- [ ] Test name resolution of "library.knowledgehub.nl" from a VM in the simulated internet network, using this DNS server for the query.
 - [ ] External Web Server Exposure & Basic Security ⏫ 
-	- [ ] NAT
+	- [x] NAT ✅ 2026-03-23
 	- [ ] Security hardening on all VMs
 - [ ] Continued Scripting 🔼 
 	- [ ] Adapt previous code
@@ -185,9 +185,9 @@
 	- [x] Public PCs ✅ 2026-03-20
 		- [x] DHCP ✅ 2026-03-20
 	- [x] DMZ ✅ 2026-03-20
-- [ ] Roter config ⏫
+- [x] Roter config ⏫ ✅ 2026-03-23
 	- [x] Firewall ✅ 2026-03-20
 		- [x] Rules between VLANs ✅ 2026-03-20
-	- [ ] NAT
+	- [x] NAT ✅ 2026-03-23
 - [ ] Automation 🔼 
 	- [ ] Monitoring tool
