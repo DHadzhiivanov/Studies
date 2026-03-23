@@ -39,8 +39,8 @@
 		- [x] Exclude Admin Accounts ✅ 2026-03-20
 - [ ] Web Server Installation & Configuration ⏫ 
 	- [ ] Install Linux VM
-		- [ ] Install Apache or Nginx
-		- [ ] Host a static page
+		- [x] Install Apache or Nginx ✅ 2026-03-23
+		- [x] Host a static page ✅ 2026-03-23
 		- [ ] Self signed certificate
 		- [ ] Test access
 - [ ] External DNS Server Installation & Configuration ⏫ 
