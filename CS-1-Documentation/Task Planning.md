@@ -37,12 +37,12 @@
 		- [x] Disable RegEdit ✅ 2026-03-20
 		- [x] Auto force updates ✅ 2026-03-20
 		- [x] Exclude Admin Accounts ✅ 2026-03-20
-- [ ] Web Server Installation & Configuration ⏫ 
-	- [ ] Install Linux VM
+- [x] Web Server Installation & Configuration ⏫ ✅ 2026-03-23
+	- [x] Install Linux VM ✅ 2026-03-23
 		- [x] Install Apache or Nginx ✅ 2026-03-23
 		- [x] Host a static page ✅ 2026-03-23
-		- [ ] Self signed certificate
-		- [ ] Test access
+		- [x] Self signed certificate ✅ 2026-03-23
+		- [x] Test access ✅ 2026-03-23
 - [ ] External DNS Server Installation & Configuration ⏫ 
 	- [ ] Install Linux Server
 		- [ ] Install BIND for DNS
