@@ -94,3 +94,8 @@ Inside the SharePoint environment we find a Teamsite:
 Management TEAM in microsoft sharepoint
 Public Teamsite
 .xls file with bonusses of the staff ( no lavel and or DLP)
+
+**Solution**
+We have to think about what permissions Copilot will have to our information in the organization.
+
+It musnt share information outside of the company.
