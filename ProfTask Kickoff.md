@@ -139,3 +139,5 @@ Ensures the project complies with GDPR and data protection regulations. Advises 
 - Security Officer
 - Architect
 - Project Leader
+
+Project Plan
