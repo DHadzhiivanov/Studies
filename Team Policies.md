@@ -4,7 +4,7 @@
 
 # Team Policies
 
-## Fonteyn Holiday Parks - Infrastructure Modernisation Project
+### Fonteyn Holiday Parks - Infrastructure Modernisation Project
 
 This document defines the professional standards and policies for our project team. All team members are expected to read, understand, and follow these policies throughout the project.
 
@@ -21,7 +21,7 @@ This document defines the professional standards and policies for our project te
 
 ### 1.2 Team Communication
 
-- The primary communication channel for the team is [Yet to be decided].
+- The primary communication channel for the team is Teams.
 - All project-related communication happens in the designated team channel, not in private messages, unless the topic is personal.
 - Messages must be responded to within one working day.
 - Dutch or English may be used, but all official documents and deliverables are written in English.
@@ -48,7 +48,40 @@ This document defines the professional standards and policies for our project te
 
 ---
 
-## 2. Security & Access
+## 2. Attendance Standards
+
+### 2.1 Arrival Time
+
+- All team members are expected to be present and ready to work by **9:30** on every project day.
+- Being present means being at the agreed workspace, logged in, and ready to participate, not just physically in the building.
+- The working day ends at the agreed time set by the team at the start of the project.
+
+### 2.2 Late Arrival
+
+- If a team member expects to arrive after 9:30, they must notify the team in the Teams channel **before 9:30**.
+- The notification must include an expected arrival time.
+- Repeated late arrivals without notification are discussed with the Project Leader and, if necessary, escalated to the proftaak tutor.
+
+### 2.3 Absence
+
+- If a team member cannot attend on a given day, they notify the Project Leader and Scrum Master **as early as possible**, and always before 9:30.
+- The absent team member remains responsible for their tasks. They must check in via Teams during the day and catch up on any standup notes or decisions made.
+- Planned absences such as appointments or personal days are communicated at least one day in advance.
+
+### 2.4 Unplanned Absence
+
+- In case of illness or an emergency, the team member notifies the Project Leader as soon as possible.
+- If a team member is absent for more than two consecutive days, the Project Leader informs the proftaak tutor.
+- Work assigned to an absent team member may be temporarily redistributed by the Project Leader to avoid blocking the team.
+
+### 2.5 Attendance Tracking
+
+- The Scrum Master keeps a simple attendance log noting who was present, late, or absent each day.
+- This log is stored in the shared Teams folder and may be used as evidence in portfolio and progress reviews.
+
+---
+
+## 3. Security & Access
 
 ### 2.1 Account & Credential Management
 
@@ -83,7 +116,7 @@ This document defines the professional standards and policies for our project te
 
 ---
 
-## 3. Code & Documentation Standards
+## 4. Code & Documentation Standards
 
 ### 3.1 Version Control
 
@@ -120,7 +153,7 @@ This document defines the professional standards and policies for our project te
 
 ---
 
-## 4. Privacy & GDPR
+## 5. Privacy & GDPR
 
 ### 4.1 Responsibilities
 
@@ -154,18 +187,17 @@ This document defines the professional standards and policies for our project te
 
 ---
 
-## Policy Acceptance
+_Last updated: March 2026_
 
-All team members are expected to confirm they have read and understood this document at the start of the project. Policies are reviewed at the end of each sprint and updated if needed.
+| Name               | Role                                                                  |
+| ------------------ | --------------------------------------------------------------------- |
+| David Hadzhiivanov | Architect<br>Project Leader<br>Network Administrator                  |
+| Mohammed Abdulhakk | Scrum Master                                                          |
+| Mohammed Bouziani  | Security Officer<br>Network Administrator<br>Architect (questionable) |
+| Aleksandar Ivanov  | Scrum Assistant<br>DevOps Engineer                                    |
+| Jacquub Abdulle    | Security Officer<br>DevOps Engineer<br>Privacy Officer                |
+| Viscaino Jorgelo   | Network Administrator                                                 |
+| Aksel Chavdarla    | ???<br>Privacy Officer                                                |
 
-|Name|Role|Date|
-|---|---|---|
-||Architect||
-||Project Leader||
-||Scrum Master||
-||Network Administrator||
-||DevOps Engineer||
-||Security Officer||
-||Privacy Officer||
 
 _Last updated: March 2026_
