@@ -1,12 +1,10 @@
+# Table of Contents
 
-If youre not attending 3 times in a row - you pay lunch for everyone
-If youre late past 9:30 without notice - 
-Come on time regularly
-Team members will conduct themselves in a professional manner, observing institutional policies given to them at student, faculty and staff orientation.
+---
 
 # Team Policies
 
-### Fonteyn Holiday Parks - Infrastructure Modernisation Project
+## Fonteyn Holiday Parks - Infrastructure Modernisation Project
 
 This document defines the professional standards and policies for our project team. All team members are expected to read, understand, and follow these policies throughout the project.
 
