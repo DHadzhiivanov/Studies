@@ -20,3 +20,4 @@ Design the overall infrastructure, make technology choices, create network/syste
 - The **Privacy Officer** may flag design changes needed for compliance - they stay in sync
 
 ## 2.2 
+
