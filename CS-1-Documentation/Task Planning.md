@@ -45,9 +45,9 @@
 		- [x] Test access ✅ 2026-03-23
 - [ ] External DNS Server Installation & Configuration ⏫ 
 	- [ ] Install Linux Server
-		- [ ] Install BIND for DNS
-			- [ ] Configure to host a public zone such as knowledgehub.nl
-		- [ ] Create an A-record in this public zone (e.g. "library") pointing to the _public_ IP address (from step 2) assigned for external webserver access.
+		- [x] Install BIND for DNS ✅ 2026-03-26
+			- [x] Configure to host a public zone such as knowledgehub.nl ✅ 2026-03-26
+		- [x] Create an A-record in this public zone (e.g. "library") pointing to the _public_ IP address (from step 2) assigned for external webserver access. ✅ 2026-03-26
 		- [ ] Test name resolution of "library.knowledgehub.nl" from a VM in the simulated internet network, using this DNS server for the query.
 - [ ] External Web Server Exposure & Basic Security ⏫ 
 	- [x] NAT ✅ 2026-03-23

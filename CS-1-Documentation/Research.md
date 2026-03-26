@@ -313,6 +313,41 @@ I needed to understand how to set up a Windows file server, create shared folder
 
 ---
 
+## 6.7 Research Entry 7
+
+### 6.7.1 Topic
+
+Setting up an external DNS server with BIND9
+
+### 6.7.2 Reason for Research
+
+I needed to understand the fundamentals of DNS and how it works along with how to properly configure BIND9 for the task in the case study.
+
+### 6.7.3 Research Sources
+
+| Type             | Source                                                                           | Description                                                                                           |
+| ---------------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Documentation    | [Official documentation for BIND9](https://bind9.readthedocs.io)                 | Used to understand DNS concepts and BIND9 synthax and configuration                                   |
+| Video / Tutorial | [BIND9 Explained in 3 minutes](https://youtu.be/nK8OLUFSp48?si=iO5zy-nZmn_HFgLh) | Used to understand why BIND9 is used                                                                  |
+| AI               | [Claude](https://claude.ai)                                                      | Used to explain the reasoning behind each configuration directive and zone file syntax in more detail |
+
+
+### 6.7.4 Key Findings
+
+-  BIND9 is configured through two main files. ``named.conf.local`` declares which zones the server is authoritative for. The zone file contains the actual DNS records.
+-  Every zone file requires an SOA record that identifies the primary nameserver and admin contact. The serial number must be incremented every time the zone file is changed or other DNS servers will not pick up the updates.
+-  The library A record points to the WAN IP of pfSense rather than directly to the web server IP, because NAT on pfSense forwards external traffic to the internal web server.
+- ``named-checkconf`` and ``named-checkzone`` are validation tools that check for syntax errors before restarting BIND.
+
+### 6.7.5 Application to the Project
+
+- Installed BIND9 on an Ubuntu VM. 
+- Created a zone for knowledgehub.nl in ``named.conf.local``. 
+- Created a zone file with an SOA record, NS record, and an A record for library.knowledgehub.nl pointing to the pfSense WAN IP. 
+- Validated the configuration with ``named-checkconf`` and ``named-checkzone`` before restarting BIND.
+
+---
+
 # 7. Conclusion
 
 The research documented in this file supports the technical decisions made during the case study. By recording the topics investigated, the sources used, and the conclusions drawn, the project demonstrates a structured approach to learning and problem solving.
