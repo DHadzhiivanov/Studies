@@ -6,6 +6,20 @@
 
 # Table of Contents
 
+- [[#1. Introduction|1. Introduction]]
+- [[#2. Requirements Overview|2. Requirements Overview]]
+- [[#3. Detailed Requirements|3. Detailed Requirements]]
+    - [[#3.1 REQ-S2P2-01 - Cloud Foundation & Governance|3.1 REQ-S2P2-01 - Cloud Foundation & Governance]]
+    - [[#3.2 REQ-S2P2-02 - Hybrid Connectivity|3.2 REQ-S2P2-02 - Hybrid Connectivity]]
+        - [[#3.3 REQ-S2P2-03 - Secure PaaS Networking|3.3 REQ-S2P2-03 - Secure PaaS Networking]]
+        - [[#3.4 REQ-S2P2-04 - Centralized Monitoring Data Store|3.4 REQ-S2P2-04 - Centralized Monitoring Data Store]]
+        - [[#3.5 REQ-S2P2-05 - Monitoring Data Access Interface|3.5 REQ-S2P2-05 - Monitoring Data Access Interface]]
+        - [[#3.6 REQ-S2P2-06 - Enhanced Monitoring Application|3.6 REQ-S2P2-06 - Enhanced Monitoring Application]]
+        - [[#3.7 REQ-S2P2-07 - Modern Endpoint Management|3.7 REQ-S2P2-07 - Modern Endpoint Management]]
+        - [[#3.8 REQ-S2P2-08 - Automation & Scripting|3.8 REQ-S2P2-08 - Automation & Scripting]]
+        - [[#3.9 REQ-S2P2-09 - Project Management & Compliance|3.9 REQ-S2P2-09 - Project Management & Compliance]]
+- [[#4. Conclusion|4. Conclusion]]
+
 ---
 
 # 1. Introduction
@@ -16,17 +30,17 @@ This document defines the functional requirements for Phase 2 of The Knowledge H
 
 # 2. Requirements Overview
 
-| ID | Title | Category |
-|----|-------|----------|
-| REQ-S2P2-01 | Cloud Foundation & Governance | Cloud Infrastructure |
-| REQ-S2P2-02 | Hybrid Connectivity | Networking |
-| REQ-S2P2-03 | Secure PaaS Networking | Networking / Security |
-| REQ-S2P2-04 | Centralized Monitoring Data Store | Data / PaaS |
-| REQ-S2P2-05 | Monitoring Data Access Interface | Application / API |
-| REQ-S2P2-06 | Enhanced Monitoring Application | Automation / Monitoring |
-| REQ-S2P2-07 | Modern Endpoint Management | Endpoint Management |
-| REQ-S2P2-08 | Automation & Scripting | Automation |
-| REQ-S2P2-09 | Project Management & Compliance | Governance |
+| ID          | Title                             | Keywords                |
+| ----------- | --------------------------------- | ----------------------- |
+| REQ-S2P2-01 | Cloud Foundation & Governance     | Cloud Infrastructure    |
+| REQ-S2P2-02 | Hybrid Connectivity               | Networking              |
+| REQ-S2P2-03 | Secure PaaS Networking            | Networking / Security   |
+| REQ-S2P2-04 | Centralized Monitoring Data Store | Data / PaaS             |
+| REQ-S2P2-05 | Monitoring Data Access Interface  | Application / API       |
+| REQ-S2P2-06 | Enhanced Monitoring Application   | Automation / Monitoring |
+| REQ-S2P2-07 | Modern Endpoint Management        | Endpoint Management     |
+| REQ-S2P2-08 | Automation & Scripting            | Automation              |
+| REQ-S2P2-09 | Project Management & Compliance   | Governance              |
 
 ---
 
@@ -53,11 +67,11 @@ This document defines the functional requirements for Phase 2 of The Knowledge H
 
 **Description:** A secure, reliable connection between the existing on-premises network (S2P1) and the cloud environment, with controlled traffic flow via defined routing rules.
 
-| Aspect | Requirement |
-|--------|-------------|
-| Connectivity | Encrypted site-to-site tunnel |
-| Routing | Defined rules for on-premises ↔ cloud traffic |
-| Security | Controlled traffic flow, no open public exposure |
+| Aspect       | Requirement                                      |
+| ------------ | ------------------------------------------------ |
+| Connectivity | Encrypted site-to-site tunnel                    |
+| Routing      | Defined rules for on-premises <-> cloud traffic  |
+| Security     | Controlled traffic flow, no open public exposure |
 
 **Key Technologies:** VPN Gateway, Local Network Gateway, Route Tables
 
@@ -92,22 +106,22 @@ This document defines the functional requirements for Phase 2 of The Knowledge H
 
 ---
 
-### 3.5 REQ-S2P2-05 – Monitoring Data Access Interface
+### 3.5 REQ-S2P2-05 - Monitoring Data Access Interface
 
 **Description:** A secure, well-defined API hosted in the cloud as the single point of interaction for submitting and retrieving monitoring data from the central database (REQ-S2P2-04).
 
-| Aspect | Requirement |
-|--------|-------------|
-| Interface | REST API with defined endpoints |
-| Security | Authenticated access only |
-| Network | Private access only (REQ-S2P2-03) |
-| Consumers | Monitoring script (S2P1) and future applications |
+| Aspect    | Requirement                               |
+| --------- | ----------------------------------------- |
+| Interface | REST API with defined endpoints           |
+| Security  | Authenticated access only                 |
+| Network   | Private access only (REQ-S2P2-03)         |
+| Consumers | Monitoring script and future applications |
 
 **Key Technologies:** Azure Functions / App Service, API Management (optional)
 
 ---
 
-### 3.6 REQ-S2P2-06 – Enhanced Monitoring Application
+### 3.6 REQ-S2P2-06 - Enhanced Monitoring Application
 
 **Description:** The monitoring application from S2P1 must be upgraded to integrate with cloud services and expand its monitoring scope.
 
@@ -121,7 +135,7 @@ This document defines the functional requirements for Phase 2 of The Knowledge H
 
 ---
 
-### 3.7 REQ-S2P2-07 – Modern Endpoint Management
+### 3.7 REQ-S2P2-07 - Modern Endpoint Management
 
 **Description:** A cloud-based solution to manage configuration, security policies, and software deployment for staff workstations, regardless of device location.
 
@@ -131,11 +145,11 @@ This document defines the functional requirements for Phase 2 of The Knowledge H
 | Software | Remote deployment and updates |
 | Scope | Location-independent (on-site and remote devices) |
 
-**Key Technologies:** Microsoft Intune, Azure AD / Entra ID, Autopilot (optional)
+**Key Technologies:** Microsoft Intune, Azure AD / Entra ID
 
 ---
 
-### 3.8 REQ-S2P2-08 – Automation & Scripting
+### 3.8 REQ-S2P2-08 - Automation & Scripting
 
 **Description:** Deployment and configuration tasks for cloud infrastructure and endpoint management must be automated where feasible to ensure consistency and efficiency.
 
@@ -149,7 +163,7 @@ This document defines the functional requirements for Phase 2 of The Knowledge H
 
 ---
 
-### 3.9 REQ-S2P2-09 – Project Management & Compliance
+### 3.9 REQ-S2P2-09 - Project Management & Compliance
 
 **Description:** The project must follow a defined methodology and demonstrate GDPR compliance throughout design and implementation.
 
@@ -164,6 +178,6 @@ This document defines the functional requirements for Phase 2 of The Knowledge H
 
 ---
 
-## 4. Conclusion
+# 4. Conclusion
 
 The requirements defined in this document extend The Knowledge Hub's IT infrastructure into a hybrid cloud model. Each requirement addresses a specific operational or security need and is linked to concrete technologies and implementation tasks. Together, they form the basis for a secure, manageable, and compliant cloud-connected environment built on the S2P1 foundation.
